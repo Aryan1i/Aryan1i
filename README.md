@@ -79,9 +79,6 @@
 ---
 
 
-
----
-
 ## 💡 Quote That Drives Me
 
 <p align="center">

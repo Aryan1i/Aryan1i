@@ -91,3 +91,7 @@
 <p align="center">
   <i>"Consistency beats talent when talent doesn't work hard."</i> 💪
 </p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Aryan1i/Aryan1i/output/github-contribution-grid-snake.svg" />
+</p>

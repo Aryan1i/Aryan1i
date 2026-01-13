@@ -4,15 +4,9 @@
 </h1>
 
 <p align="center">
-  <a href="https://github.com/aryan1i">
-    <img src="https://readme-typing-svg.demolab.com?
-    font=Fira+Code&size=24&pause=1000&center=true&vCenter=true&width=600
-    &lines=CSE+Student+from+India;
-    DSA+Enthusiast+%7C+Java+Learner;
-    Aspiring+Software+Engineer;
-    Consistency+Beats+Talent+⚡" />
-  </a>
+  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&center=true&vCenter=true&width=600&lines=CSE+Student+from+India;DSA+Enthusiast+%7C+Java+Learner;Aspiring+Software+Engineer;Consistency+Beats+Talent+⚡">
 </p>
+
 
 ---
 

@@ -1,6 +1,6 @@
 <!-- Animated Typing Header -->
 <h1 align="center">
-  Hi 👋, I'm Aryan Gupta
+  Hi 👋, I'm Aryan
 </h1>
 
 <p align="center">
@@ -38,19 +38,23 @@
 ## 🌐 Connect With Me
 
 <p align="center">
-  <a href="https://linkedin.com/in/aryan-gupta-58a99834a">
-    <img src="https://skillicons.dev/icons?i=linkedin" />
+  <a href="https://linkedin.com/in/aryan-gupta-58a99834a" target="_blank">
+    <img src="https://skillicons.dev/icons?i=linkedin" height="45"/>
   </a>
-  <a href="https://www.leetcode.com/_aryan1i">
-    <img src="https://skillicons.dev/icons?i=leetcode" />
+  &nbsp;&nbsp;
+  <a href="https://www.leetcode.com/_aryan1i" target="_blank">
+    <img src="https://skillicons.dev/icons?i=leetcode" height="45"/>
   </a>
-  <a href="https://www.hackerrank.com/aryann_gupta_1ii">
-    <img src="https://skillicons.dev/icons?i=hackerrank" />
+  &nbsp;&nbsp;
+  <a href="https://www.hackerrank.com/aryann_gupta_1ii" target="_blank">
+    <img src="https://skillicons.dev/icons?i=hackerrank" height="45"/>
   </a>
-  <a href="https://auth.geeksforgeeks.org/user/aryanngu56c8/profile">
-    <img src="https://img.shields.io/badge/GFG-darkgreen?style=for-the-badge"/>
+  &nbsp;&nbsp;
+  <a href="https://auth.geeksforgeeks.org/user/aryanngu56c8/profile" target="_blank">
+    <img src="https://skillicons.dev/icons?i=github" height="45"/>
   </a>
 </p>
+
 
 ---
 

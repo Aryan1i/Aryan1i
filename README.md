@@ -1,5 +1,9 @@
 <h1 align="center">Hi 👋, I'm Aryan</h1>
-<p align="center"><b>CSE Student | DSA | Java | AI/ML</b></p>
+
+<p align="center">
+  <b>CSE Student | DSA Enthusiast | Java Learner | AI/ML Basics</b>
+</p>
+
 
 ---
 

@@ -39,19 +39,19 @@
 
 <p align="center">
   <a href="https://linkedin.com/in/aryan-gupta-58a99834a" target="_blank">
-    <img src="https://skillicons.dev/icons?i=linkedin" height="45"/>
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
   </a>
   &nbsp;&nbsp;
   <a href="https://www.leetcode.com/_aryan1i" target="_blank">
-    <img src="https://skillicons.dev/icons?i=leetcode" height="45"/>
+    <img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black"/>
   </a>
   &nbsp;&nbsp;
   <a href="https://www.hackerrank.com/aryann_gupta_1ii" target="_blank">
-    <img src="https://skillicons.dev/icons?i=hackerrank" height="45"/>
+    <img src="https://img.shields.io/badge/HackerRank-2EC866?style=for-the-badge&logo=hackerrank&logoColor=white"/>
   </a>
   &nbsp;&nbsp;
   <a href="https://auth.geeksforgeeks.org/user/aryanngu56c8/profile" target="_blank">
-    <img src="https://skillicons.dev/icons?i=github" height="45"/>
+    <img src="https://img.shields.io/badge/GeeksforGeeks-0F9D58?style=for-the-badge&logo=geeksforgeeks&logoColor=white"/>
   </a>
 </p>
 

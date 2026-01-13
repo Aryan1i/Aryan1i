@@ -1,12 +1,5 @@
-<!-- Animated Typing Header -->
-<h1 align="center">
-  Hi 👋, I'm Aryan
-</h1>
-
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&center=true&vCenter=true&width=600&lines=CSE+Student+from+India;DSA+Enthusiast+%7C+Java+Learner;Aspiring+Software+Engineer;Consistency+Beats+Talent+⚡">
-</p>
-
+<h1 align="center">Hi 👋, I'm Aryan</h1>
+<p align="center"><b>CSE Student | DSA | Java | AI/ML</b></p>
 
 ---
 
@@ -61,10 +54,6 @@
 ---
 
 ## 📊 GitHub Analytics
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Aryan1i&show_icons=true&theme=tokyonight&hide_border=true" />
-</p>
 
 <p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=Aryan1i&theme=tokyonight&hide_border=true" />

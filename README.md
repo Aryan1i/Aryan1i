@@ -41,6 +41,10 @@
     <img src="https://img.shields.io/badge/HackerRank-2EC866?style=for-the-badge&logo=hackerrank&logoColor=white"/>
   </a>
   &nbsp;&nbsp;
+  <a href="https://codeforces.com/profile/aryan_1ii" target="_blank">
+    <img src="https://img.shields.io/badge/Codeforces-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white"/>
+  </a>
+  &nbsp;&nbsp;
   <a href="https://auth.geeksforgeeks.org/user/aryanngu56c8/profile" target="_blank">
     <img src="https://img.shields.io/badge/GeeksforGeeks-0F9D58?style=for-the-badge&logo=geeksforgeeks&logoColor=white"/>
   </a>

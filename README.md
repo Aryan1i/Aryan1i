@@ -22,7 +22,6 @@
 - 🌱 Learning **Java (Core + DSA)** & **AI/ML basics**
 - 👯 Open to **coding challenges & DSA groups**
 - 🤝 Seeking guidance on **clean, optimized code**
-- 💬 Ask me about **Arrays, Stacks, Recursion, Linked Lists**
 - ⚡ Fun fact: *I code best at night 🌙*
 
 ---

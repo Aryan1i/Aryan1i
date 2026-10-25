@@ -36,6 +36,18 @@
 
   <br/>
 
+  <!-- ================= QUICK NAVIGATION PILLS ================= -->
+  <p align="center">
+    <a href="#about-me"><img src="https://img.shields.io/badge/About_Me-161b22?style=flat-square&logo=visualstudiocode&logoColor=2dd4bf" alt="About" /></a>&nbsp;
+    <a href="#tech-arsenal"><img src="https://img.shields.io/badge/Tech_Arsenal-161b22?style=flat-square&logo=codeforces&logoColor=2dd4bf" alt="Tech" /></a>&nbsp;
+    <a href="#cp-arena"><img src="https://img.shields.io/badge/CP_Arena-161b22?style=flat-square&logo=leetcode&logoColor=2dd4bf" alt="CP" /></a>&nbsp;
+    <a href="#contributions"><img src="https://img.shields.io/badge/Contributions-161b22?style=flat-square&logo=github&logoColor=2dd4bf" alt="Contributions" /></a>&nbsp;
+    <a href="#projects"><img src="https://img.shields.io/badge/Projects-161b22?style=flat-square&logo=git&logoColor=2dd4bf" alt="Projects" /></a>&nbsp;
+    <a href="#coding-vibe"><img src="https://img.shields.io/badge/Philosophy-161b22?style=flat-square&logo=spotify&logoColor=2dd4bf" alt="Philosophy" /></a>
+  </p>
+
+  <br/>
+
   <!-- Profile Views -->
   <img src="https://komarev.com/ghpvc/?username=Aryan1i&label=PROFILE%20VIEWS&color=2dd4bf&style=for-the-badge" alt="Profile Views" />
 
@@ -53,6 +65,7 @@
 <!--                      ABOUT ME                          -->
 <!-- ====================================================== -->
 
+<a name="about-me"></a>
 ## <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="36"> &nbsp;Terminal Log // About Me
 
 ```yaml
@@ -75,7 +88,34 @@ achievements:
   - peak_leetcode_rating: 1592
   - codechef_rating: 1268
   - icpc_india_preliminary_2026: Tentative Rank 1168
+
+current_focus:
+  - Spring Boot & Relational Entity Architecture
+  - Advanced Graph Theory & Dynamic Programming optimizations
+
+availability:
+  status: Open to Software Engineering Internships & Technical Collaborations 🚀
 ```
+
+<br/>
+
+<!-- Core Engineering Values Matrix -->
+<table width="100%" cellpadding="8" cellspacing="6">
+  <tr>
+    <td width="33%" align="center" style="background: #0d1117; border: 1px solid #21262d; border-radius: 10px;">
+      <font color="#2dd4bf"><b>🎯 Problem-First Mindset</b></font><br/>
+      <sub><i>Analyze asymptotic space &amp; time bounds before writing line 1.</i></sub>
+    </td>
+    <td width="33%" align="center" style="background: #0d1117; border: 1px solid #21262d; border-radius: 10px;">
+      <font color="#2dd4bf"><b>⚡ Database Architecture</b></font><br/>
+      <sub><i>Strict relational integrity, connection pooling &amp; clean ORM cascades.</i></sub>
+    </td>
+    <td width="33%" align="center" style="background: #0d1117; border: 1px solid #21262d; border-radius: 10px;">
+      <font color="#2dd4bf"><b>🔥 Relentless Consistency</b></font><br/>
+      <sub><i>300+ days continuous daily streak across competitive platforms.</i></sub>
+    </td>
+  </tr>
+</table>
 
 <br/><br/>
 
@@ -89,6 +129,7 @@ achievements:
 <!--                   TECH ARSENAL                         -->
 <!-- ====================================================== -->
 
+<a name="tech-arsenal"></a>
 ## <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width="28"> &nbsp;Tech Arsenal
 
 <div align="center">
@@ -112,6 +153,7 @@ achievements:
 <!--             COMPETITIVE PROGRAMMING ARENA              -->
 <!-- ====================================================== -->
 
+<a name="cp-arena"></a>
 ## <img src="https://media.giphy.com/media/W5eoZHPpUx9sapR0eu/giphy.gif" width="34"> &nbsp;Competitive Programming Arena
 
 <div align="center">
@@ -207,6 +249,7 @@ achievements:
 <!--                 CONTRIBUTION JOURNEY                   -->
 <!-- ====================================================== -->
 
+<a name="contributions"></a>
 ## <img src="https://media.giphy.com/media/jSKBmKkvo2dPQQtsR1/giphy.gif" width="32"> &nbsp;Contribution Journey
 
 <div align="center">
@@ -232,6 +275,7 @@ achievements:
 <!--                   GITHUB ANALYTICS                     -->
 <!-- ====================================================== -->
 
+<a name="analytics"></a>
 ## <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="28"> &nbsp;GitHub Analytics
 
 <div align="center">
@@ -262,6 +306,7 @@ achievements:
 <!--                   FEATURED PROJECTS                    -->
 <!-- ====================================================== -->
 
+<a name="projects"></a>
 ## <img src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" width="30"> &nbsp;Featured Projects
 
 <div align="center">
@@ -357,6 +402,7 @@ achievements:
 <!--                   CODING VIBE                          -->
 <!-- ====================================================== -->
 
+<a name="coding-vibe"></a>
 ## <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="30"> &nbsp;Coding Vibe
 
 <div align="center">

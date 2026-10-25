@@ -1,0 +1,172 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" viewBox="0 0 1000 240" role="img">
+<defs>
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+    .track-pill { fill: #161b22; stroke: #30363d; stroke-width: 1px; rx: 12px; }
+    .track-text { fill: #f0f6fc; font-size: 13.5px; font-weight: 600; }
+  </style>
+
+  <!-- Left/Right Edge Fade Masks -->
+  <linearGradient id="fadeMask" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+    <stop offset="8%" stop-color="#ffffff" stop-opacity="1"/>
+    <stop offset="92%" stop-color="#ffffff" stop-opacity="1"/>
+    <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+  </linearGradient>
+
+  <mask id="marqueeMask">
+    <rect x="0" y="0" width="1000" height="240" fill="url(#fadeMask)"/>
+  </mask>
+
+  <!-- ================= ROW 1 (LANGUAGES & BACKEND) ================= -->
+  <!-- Width per item = 140px, Gap = 16px => Period = 156px * 8 items = 1248px -->
+  <g id="row1-set">
+    <!-- Java -->
+    <g transform="translate(0, 0)">
+      <rect width="140" height="48" class="track-pill" stroke="#ed8b00" stroke-width="1.2"/>
+      <circle cx="28" cy="24" r="14" fill="#2d1c07"/>
+      <text x="28" y="29" fill="#ed8b00" font-size="14" font-weight="800" text-anchor="middle">☕</text>
+      <text x="52" y="29" class="track-text">Java</text>
+    </g>
+    <!-- C++ -->
+    <g transform="translate(156, 0)">
+      <rect width="140" height="48" class="track-pill" stroke="#00599c" stroke-width="1.2"/>
+      <circle cx="28" cy="24" r="14" fill="#09253e"/>
+      <text x="28" y="28" fill="#58a6ff" font-size="11" font-weight="800" text-anchor="middle">C++</text>
+      <text x="52" y="29" class="track-text">C++</text>
+    </g>
+    <!-- Python -->
+    <g transform="translate(312, 0)">
+      <rect width="140" height="48" class="track-pill" stroke="#3776ab" stroke-width="1.2"/>
+      <circle cx="28" cy="24" r="14" fill="#132637"/>
+      <text x="28" y="29" fill="#ffd43b" font-size="14" font-weight="800" text-anchor="middle">🐍</text>
+      <text x="52" y="29" class="track-text">Python</text>
+    </g>
+    <!-- JavaScript -->
+    <g transform="translate(468, 0)">
+      <rect width="140" height="48" class="track-pill" stroke="#f7df1e" stroke-width="1.2"/>
+      <circle cx="28" cy="24" r="14" fill="#2d2b07"/>
+      <text x="28" y="28" fill="#f7df1e" font-size="11" font-weight="900" text-anchor="middle">JS</text>
+      <text x="52" y="29" class="track-text">JavaScript</text>
+    </g>
+    <!-- SQL / MySQL -->
+    <g transform="translate(624, 0)">
+      <rect width="140" height="48" class="track-pill" stroke="#4479a1" stroke-width="1.2"/>
+      <circle cx="28" cy="24" r="14" fill="#102534"/>
+      <text x="28" y="29" fill="#00758f" font-size="14" font-weight="800" text-anchor="middle">🐬</text>
+      <text x="52" y="29" class="track-text">MySQL / SQL</text>
+    </g>
+    <!-- JDBC -->
+    <g transform="translate(780, 0)">
+      <rect width="140" height="48" class="track-pill" stroke="#007396" stroke-width="1.2"/>
+      <circle cx="28" cy="24" r="14" fill="#092732"/>
+      <text x="28" y="29" fill="#38bdf8" font-size="13" font-weight="800" text-anchor="middle">🔌</text>
+      <text x="52" y="29" class="track-text">JDBC</text>
+    </g>
+    <!-- Hibernate -->
+    <g transform="translate(936, 0)">
+      <rect width="140" height="48" class="track-pill" stroke="#59666c" stroke-width="1.2"/>
+      <circle cx="28" cy="24" r="14" fill="#1b2124"/>
+      <text x="28" y="29" fill="#bcae9b" font-size="13" font-weight="800" text-anchor="middle">🔗</text>
+      <text x="52" y="29" class="track-text">Hibernate</text>
+    </g>
+    <!-- JPA / Servlets -->
+    <g transform="translate(1092, 0)">
+      <rect width="140" height="48" class="track-pill" stroke="#6db33f" stroke-width="1.2"/>
+      <circle cx="28" cy="24" r="14" fill="#18270f"/>
+      <text x="28" y="29" fill="#6db33f" font-size="13" font-weight="800" text-anchor="middle">🌱</text>
+      <text x="52" y="29" class="track-text">JPA / Servlets</text>
+    </g>
+  </g>
+
+  <!-- ================= ROW 2 (TOOLS & CONCEPTS) ================= -->
+  <!-- 8 items * 156px = 1248px -->
+  <g id="row2-set">
+    <!-- Docker -->
+    <g transform="translate(0, 0)">
+      <rect width="140" height="48" class="track-pill" stroke="#2496ed" stroke-width="1.2"/>
+      <circle cx="28" cy="24" r="14" fill="#0a253a"/>
+      <text x="28" y="29" fill="#2496ed" font-size="14" font-weight="800" text-anchor="middle">🐳</text>
+      <text x="52" y="29" class="track-text">Docker</text>
+    </g>
+    <!-- Git & GitHub -->
+    <g transform="translate(156, 0)">
+      <rect width="140" height="48" class="track-pill" stroke="#f05032" stroke-width="1.2"/>
+      <circle cx="28" cy="24" r="14" fill="#301511"/>
+      <text x="28" y="29" fill="#f05032" font-size="14" font-weight="800" text-anchor="middle">🐙</text>
+      <text x="52" y="29" class="track-text">Git &amp; GitHub</text>
+    </g>
+    <!-- Data Structures -->
+    <g transform="translate(312, 0)">
+      <rect width="140" height="48" class="track-pill" stroke="#ff6f00" stroke-width="1.2"/>
+      <circle cx="28" cy="24" r="14" fill="#2d1704"/>
+      <text x="28" y="29" fill="#ff9100" font-size="14" font-weight="800" text-anchor="middle">🧠</text>
+      <text x="52" y="29" class="track-text">DSA</text>
+    </g>
+    <!-- OOP -->
+    <g transform="translate(468, 0)">
+      <rect width="140" height="48" class="track-pill" stroke="#8a2be2" stroke-width="1.2"/>
+      <circle cx="28" cy="24" r="14" fill="#230d36"/>
+      <text x="28" y="29" fill="#b388ff" font-size="14" font-weight="800" text-anchor="middle">💎</text>
+      <text x="52" y="29" class="track-text">OOP Concepts</text>
+    </g>
+    <!-- VS Code -->
+    <g transform="translate(624, 0)">
+      <rect width="140" height="48" class="track-pill" stroke="#007acc" stroke-width="1.2"/>
+      <circle cx="28" cy="24" r="14" fill="#072032"/>
+      <text x="28" y="29" fill="#38bdf8" font-size="14" font-weight="800" text-anchor="middle">💻</text>
+      <text x="52" y="29" class="track-text">VS Code</text>
+    </g>
+    <!-- IntelliJ IDEA -->
+    <g transform="translate(780, 0)">
+      <rect width="140" height="48" class="track-pill" stroke="#fe315d" stroke-width="1.2"/>
+      <circle cx="28" cy="24" r="14" fill="#310912"/>
+      <text x="28" y="29" fill="#fe315d" font-size="14" font-weight="800" text-anchor="middle">⚡</text>
+      <text x="52" y="29" class="track-text">IntelliJ IDEA</text>
+    </g>
+    <!-- Maven -->
+    <g transform="translate(936, 0)">
+      <rect width="140" height="48" class="track-pill" stroke="#c71a36" stroke-width="1.2"/>
+      <circle cx="28" cy="24" r="14" fill="#2d0b11"/>
+      <text x="28" y="29" fill="#ff5252" font-size="14" font-weight="800" text-anchor="middle">📦</text>
+      <text x="52" y="29" class="track-text">Maven</text>
+    </g>
+    <!-- HTML5 & CSS3 -->
+    <g transform="translate(1092, 0)">
+      <rect width="140" height="48" class="track-pill" stroke="#e34f26" stroke-width="1.2"/>
+      <circle cx="28" cy="24" r="14" fill="#2d120a"/>
+      <text x="28" y="29" fill="#e34f26" font-size="14" font-weight="800" text-anchor="middle">🎨</text>
+      <text x="52" y="29" class="track-text">HTML5 / CSS3</text>
+    </g>
+  </g>
+</defs>
+
+<!-- Background -->
+<rect width="1000" height="240" rx="16" fill="#0d1117" stroke="#21262d" stroke-width="1.2"/>
+
+<!-- Subtitle / Category Markers -->
+<text x="32" y="34" fill="#2dd4bf" font-size="11" font-weight="700" letter-spacing="1.5">⚡ LANGUAGES &amp; BACKEND</text>
+<text x="32" y="138" fill="#38bdf8" font-size="11" font-weight="700" letter-spacing="1.5">🔧 TOOLS, CONCEPTS &amp; PERSISTENCE</text>
+
+<!-- Masked Moving Container -->
+<g mask="url(#marqueeMask)">
+  <!-- Track 1: Moving Left (Row 1) -->
+  <g transform="translate(0, 48)">
+    <g>
+      <use href="#row1-set" x="0" y="0"/>
+      <use href="#row1-set" x="1248" y="0"/>
+      <animateTransform attributeName="transform" type="translate" values="0 0; -1248 0" dur="28s" repeatCount="indefinite" />
+    </g>
+  </g>
+
+  <!-- Track 2: Moving Right (Row 2) -->
+  <g transform="translate(0, 152)">
+    <g>
+      <use href="#row2-set" x="-1248" y="0"/>
+      <use href="#row2-set" x="0" y="0"/>
+      <animateTransform attributeName="transform" type="translate" values="-1248 0; 0 0" dur="32s" repeatCount="indefinite" />
+    </g>
+  </g>
+</g>
+
+</svg>

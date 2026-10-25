@@ -139,10 +139,22 @@
       <text x="52" y="29" class="track-text">HTML5 / CSS3</text>
     </g>
   </g>
+  <linearGradient id="techRay" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#ffffff"/>
+    <stop offset="35%" stop-color="#5eead4"/>
+    <stop offset="70%" stop-color="#2dd4bf"/>
+    <stop offset="100%" stop-color="#0f766e" stop-opacity="0"/>
+  </linearGradient>
 </defs>
 
 <!-- Background -->
-<rect width="1000" height="240" rx="16" fill="#0d1117" stroke="#21262d" stroke-width="1.2"/>
+<rect width="1000" height="240" rx="16" fill="#0d1117" stroke="#1a2e3d" stroke-width="1.2"/>
+<!-- Animated Moving Ray on Border -->
+<rect x="0.5" y="0.5" width="999" height="239" rx="16" fill="none" 
+      stroke="url(#techRay)" stroke-width="2" stroke-linecap="round"
+      stroke-dasharray="380 2100">
+  <animate attributeName="stroke-dashoffset" values="2480;0" dur="5.8s" repeatCount="indefinite"/>
+</rect>
 
 <!-- Subtitle / Category Markers -->
 <text x="32" y="34" fill="#2dd4bf" font-size="11" font-weight="700" letter-spacing="1.5">⚡ LANGUAGES &amp; BACKEND</text>

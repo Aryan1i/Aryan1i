@@ -12,10 +12,22 @@
       <feMergeNode in="SourceGraphic"/>
     </feMerge>
   </filter>
+  <linearGradient id="ccRay" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#ffffff"/>
+    <stop offset="35%" stop-color="#5eead4"/>
+    <stop offset="70%" stop-color="#2dd4bf"/>
+    <stop offset="100%" stop-color="#0f766e" stop-opacity="0"/>
+  </linearGradient>
 </defs>
 
 <!-- Card Base with rounded border -->
-<rect x="1" y="1" width="458" height="213" rx="16" fill="url(#bgGrad)" stroke="#2dd4bf" stroke-width="1.2"/>
+<rect x="1" y="1" width="458" height="213" rx="16" fill="url(#bgGrad)" stroke="#1a2e3d" stroke-width="1.2"/>
+<!-- Animated Moving Ray on Border -->
+<rect x="1" y="1" width="458" height="213" rx="16" fill="none" 
+      stroke="url(#ccRay)" stroke-width="2" stroke-linecap="round"
+      stroke-dasharray="240 1110">
+  <animate attributeName="stroke-dashoffset" values="1350;0" dur="4.8s" repeatCount="indefinite"/>
+</rect>
 
 <!-- Top Header Bar -->
 <g transform="translate(24, 20)">

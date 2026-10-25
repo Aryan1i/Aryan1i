@@ -1,6 +1,6 @@
 <div align="center">
 
-  <!-- ================= BANNER ================= -->
+  <!-- ================= BANNER WITH ASCII FACE & BORDER RAY ================= -->
   <img src="assets/banner.svg" alt="Aryan Gupta Banner" width="100%" />
 
   <br/><br/>
@@ -42,6 +42,7 @@
     <a href="#tech-arsenal"><img src="https://img.shields.io/badge/Tech_Arsenal-161b22?style=flat-square&logo=codeforces&logoColor=2dd4bf" alt="Tech" /></a>&nbsp;
     <a href="#cp-arena"><img src="https://img.shields.io/badge/CP_Arena-161b22?style=flat-square&logo=leetcode&logoColor=2dd4bf" alt="CP" /></a>&nbsp;
     <a href="#contributions"><img src="https://img.shields.io/badge/Contributions-161b22?style=flat-square&logo=github&logoColor=2dd4bf" alt="Contributions" /></a>&nbsp;
+    <a href="#analytics"><img src="https://img.shields.io/badge/Analytics-161b22?style=flat-square&logo=googleanalytics&logoColor=2dd4bf" alt="Analytics" /></a>&nbsp;
     <a href="#projects"><img src="https://img.shields.io/badge/Projects-161b22?style=flat-square&logo=git&logoColor=2dd4bf" alt="Projects" /></a>&nbsp;
     <a href="#coding-vibe"><img src="https://img.shields.io/badge/Philosophy-161b22?style=flat-square&logo=spotify&logoColor=2dd4bf" alt="Philosophy" /></a>
   </p>
@@ -55,18 +56,24 @@
 
 <br/><br/>
 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
-</p>
-
-<br/><br/>
-
 <!-- ====================================================== -->
-<!--                      ABOUT ME                          -->
+<!--             01 // TERMINAL LOG // ABOUT ME             -->
 <!-- ====================================================== -->
 
 <a name="about-me"></a>
-## <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="36"> &nbsp;Terminal Log // About Me
+<img src="assets/section-01-about.svg" width="100%" alt="01 About Me" />
+
+<br/><br/>
+
+<table border="0" align="center" width="100%">
+<tr>
+  <!-- Left Column: Face-Generating ASCII Portrait Terminal (Avi Vashishta Style) -->
+  <td width="46%" valign="top" align="center">
+    <img src="assets/aryan-ascii.svg" width="100%" alt="Aryan Gupta Neural ASCII Portrait" />
+  </td>
+
+  <!-- Right Column: Terminal Log -->
+  <td width="54%" valign="top">
 
 ```yaml
 identity:
@@ -97,64 +104,56 @@ availability:
   status: Open to Software Engineering Internships & Technical Collaborations 🚀
 ```
 
+  </td>
+</tr>
+</table>
+
 <br/>
 
 <!-- Core Engineering Values Matrix -->
-<table width="100%" cellpadding="8" cellspacing="6">
+<table width="100%" cellpadding="10" cellspacing="6">
   <tr>
-    <td width="33%" align="center" style="background: #0d1117; border: 1px solid #21262d; border-radius: 10px;">
+    <td width="33%" align="center" style="background: #0d1117; border: 1.2px solid #1a2e3d; border-radius: 10px;">
       <font color="#2dd4bf"><b>🎯 Problem-First Mindset</b></font><br/>
       <sub><i>Analyze asymptotic space &amp; time bounds before writing line 1.</i></sub>
     </td>
-    <td width="33%" align="center" style="background: #0d1117; border: 1px solid #21262d; border-radius: 10px;">
+    <td width="33%" align="center" style="background: #0d1117; border: 1.2px solid #1a2e3d; border-radius: 10px;">
       <font color="#2dd4bf"><b>⚡ Database Architecture</b></font><br/>
       <sub><i>Strict relational integrity, connection pooling &amp; clean ORM cascades.</i></sub>
     </td>
-    <td width="33%" align="center" style="background: #0d1117; border: 1px solid #21262d; border-radius: 10px;">
+    <td width="33%" align="center" style="background: #0d1117; border: 1.2px solid #1a2e3d; border-radius: 10px;">
       <font color="#2dd4bf"><b>🔥 Relentless Consistency</b></font><br/>
       <sub><i>300+ days continuous daily streak across competitive platforms.</i></sub>
     </td>
   </tr>
 </table>
 
-<br/><br/>
-
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
-</p>
-
-<br/><br/>
+<br/><br/><br/>
 
 <!-- ====================================================== -->
-<!--                   TECH ARSENAL                         -->
+<!--                   02 // TECH ARSENAL                   -->
 <!-- ====================================================== -->
 
 <a name="tech-arsenal"></a>
-## <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width="28"> &nbsp;Tech Arsenal
+<img src="assets/section-02-tech.svg" width="100%" alt="02 Tech Arsenal" />
 
 <div align="center">
 
-  <br/>
+  <br/><br/>
 
-  <!-- Smooth Infinite Moving Marquee -->
+  <!-- Smooth Infinite Moving Marquee with Glowing Border Ray -->
   <img src="assets/tech-stack.svg" alt="Animated Moving Tech Arsenal" width="100%" />
 
 </div>
 
-<br/><br/>
-
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
-</p>
-
-<br/><br/>
+<br/><br/><br/>
 
 <!-- ====================================================== -->
-<!--             COMPETITIVE PROGRAMMING ARENA              -->
+<!--             03 // COMPETITIVE PROGRAMMING ARENA        -->
 <!-- ====================================================== -->
 
 <a name="cp-arena"></a>
-## <img src="https://media.giphy.com/media/W5eoZHPpUx9sapR0eu/giphy.gif" width="34"> &nbsp;Competitive Programming Arena
+<img src="assets/section-03-cp.svg" width="100%" alt="03 Competitive Programming Arena" />
 
 <div align="center">
 
@@ -202,7 +201,7 @@ availability:
 
   <br/><br/>
 
-  <!-- 2x2 Profile Cards Grid: Row 1 = LeetCode + CodeChef | Row 2 = Codeforces + GeeksforGeeks -->
+  <!-- 2x2 Profile Cards Grid: Row 1 = LeetCode + CodeChef (with Border Ray) | Row 2 = Codeforces + GeeksforGeeks -->
   <table border="0" align="center" cellpadding="8" cellspacing="8">
     <tr>
       <td align="center" valign="middle">
@@ -237,50 +236,36 @@ availability:
 
 </div>
 
-<br/><br/>
-
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
-</p>
-
-<br/><br/>
+<br/><br/><br/>
 
 <!-- ====================================================== -->
-<!--                 CONTRIBUTION JOURNEY                   -->
+<!--             04 // CONTRIBUTION JOURNEY                 -->
 <!-- ====================================================== -->
 
 <a name="contributions"></a>
-## <img src="https://media.giphy.com/media/jSKBmKkvo2dPQQtsR1/giphy.gif" width="32"> &nbsp;Contribution Journey
+<img src="assets/section-04-contributions.svg" width="100%" alt="04 Contribution Journey" />
 
 <div align="center">
 
-  <p><sub><i>Dynamic contribution grid snake tracking continuous daily commit activity</i></sub></p>
+  <br/><br/>
 
-  <br/>
-
-  <!-- Contribution Grid Snake Animation (Dark Neon Theme) -->
-  <img src="https://raw.githubusercontent.com/Aryan1i/Aryan1i/output/github-contribution-grid-snake-dark.svg" alt="GitHub Contribution Snake Animation" width="100%" />
+  <!-- Real GitHub Contribution Snake with Sushmita Serpentine Motion & Glowing Border Ray -->
+  <img src="assets/contribution-snake.svg" alt="GitHub Contribution Snake Animation" width="100%" />
 
 </div>
 
-<br/><br/>
-
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
-</p>
-
-<br/><br/>
+<br/><br/><br/>
 
 <!-- ====================================================== -->
-<!--                   GITHUB ANALYTICS                     -->
+<!--                   05 // GITHUB ANALYTICS               -->
 <!-- ====================================================== -->
 
 <a name="analytics"></a>
-## <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="28"> &nbsp;GitHub Analytics
+<img src="assets/section-05-analytics.svg" width="100%" alt="05 GitHub Analytics" />
 
 <div align="center">
 
-  <br/>
+  <br/><br/>
 
   <!-- Streak Stats Card -->
   <a href="https://github.com/Aryan1i">
@@ -294,28 +279,22 @@ availability:
 
 </div>
 
-<br/><br/>
-
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
-</p>
-
-<br/><br/>
+<br/><br/><br/>
 
 <!-- ====================================================== -->
-<!--                   FEATURED PROJECTS                    -->
+<!--                   06 // FEATURED PROJECTS              -->
 <!-- ====================================================== -->
 
 <a name="projects"></a>
-## <img src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" width="30"> &nbsp;Featured Projects
+<img src="assets/section-06-projects.svg" width="100%" alt="06 Featured Projects" />
 
 <div align="center">
 
-<br/>
+<br/><br/>
 
-<table width="100%" cellpadding="8" cellspacing="8">
+<table width="100%" cellpadding="10" cellspacing="10">
 <tr>
-  <td width="50%" valign="top">
+  <td width="50%" valign="top" style="background: #0d1117; border: 1.2px solid #1a2e3d; border-radius: 12px;">
     <h3 align="center">🧬 CodeDNA</h3>
     <p align="center">
       <a href="https://github.com/Aryan1i/CodeDNA" target="_blank">
@@ -332,7 +311,7 @@ availability:
       <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
     </p>
   </td>
-  <td width="50%" valign="top">
+  <td width="50%" valign="top" style="background: #0d1117; border: 1.2px solid #1a2e3d; border-radius: 12px;">
     <h3 align="center">🗄️ JDBC CRUD Project</h3>
     <p align="center">
       <a href="https://github.com/Aryan1i/springboot/tree/main/JDBC-CRUD-Project/src" target="_blank">
@@ -351,7 +330,7 @@ availability:
   </td>
 </tr>
 <tr>
-  <td width="50%" valign="top">
+  <td width="50%" valign="top" style="background: #0d1117; border: 1.2px solid #1a2e3d; border-radius: 12px;">
     <h3 align="center">🔗 Hibernate &amp; JPA Projects</h3>
     <p align="center">
       <a href="https://github.com/Aryan1i/springboot/tree/main/JDBC-Learning/src" target="_blank">
@@ -368,7 +347,7 @@ availability:
       <img src="https://img.shields.io/badge/JPA-6DB33F?style=flat-square&logo=spring&logoColor=white" />
     </p>
   </td>
-  <td width="50%" valign="top">
+  <td width="50%" valign="top" style="background: #0d1117; border: 1.2px solid #1a2e3d; border-radius: 12px;">
     <h3 align="center">🧩 DSA Problem-Solving Hub</h3>
     <p align="center">
       <a href="https://github.com/Aryan1i/DSA" target="_blank">
@@ -390,24 +369,18 @@ availability:
 
 </div>
 
-<br/><br/>
-
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
-</p>
-
-<br/><br/>
+<br/><br/><br/>
 
 <!-- ====================================================== -->
-<!--                   CODING VIBE                          -->
+<!--                   07 // CODING VIBE                    -->
 <!-- ====================================================== -->
 
 <a name="coding-vibe"></a>
-## <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="30"> &nbsp;Coding Vibe
+<img src="assets/section-07-vibe.svg" width="100%" alt="07 Coding Vibe" />
 
 <div align="center">
 
-  <br/>
+  <br/><br/>
 
   <!-- Aesthetic Developer Workspace Animation (Dark Cyberpunk Theme) -->
   <p align="center">

@@ -89,7 +89,7 @@
     <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/>
   </circle>
   <text x="15" y="12" fill="#2dd4bf" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="700" letter-spacing="1">
-    STREAK: 290D 🔥
+    STREAK: 300D+ 🔥
   </text>
 </g>
 
@@ -120,9 +120,9 @@
 
 <!-- Status text -->
 <text x="72" y="226" fill="#8ca0b3" font-family="'JetBrains Mono', monospace" font-size="12.5">
-  <tspan fill="#38bdf8">🎓 Education:</tspan> B.Tech CSE (2025–2029) · Semester 3
+  <tspan fill="#38bdf8">🎓 Education:</tspan> B.Tech in Computer Science · Semester 3
   <tspan fill="#64748b"> | </tspan>
-  <tspan fill="#f59e0b">Rank 3rd in Batch (Sem 1)</tspan>
+  <tspan fill="#2dd4bf">PW Institute of Innovation</tspan>
 </text>
 
 <!-- ================= RIGHT SIDE: TECH CIRCUIT DIAGRAM ================= -->
@@ -194,7 +194,7 @@
   <rect width="250" height="60" rx="10" fill="#091824" stroke="#16384c" stroke-width="1"/>
   <text x="16" y="25" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="1">LEETCODE CONTEST</text>
   <text x="16" y="49" fill="#f59e0b" font-family="'Segoe UI', monospace" font-size="22" font-weight="800">1592 Peak</text>
-  <text x="145" y="47" fill="#2dd4bf" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">· 290d Streak</text>
+  <text x="145" y="47" fill="#2dd4bf" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">· 300d+ Streak</text>
 </g>
 
 <!-- Metric 3: ICPC & CodeChef -->

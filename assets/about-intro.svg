@@ -1,0 +1,177 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="1200" height="420" role="img">
+  <defs>
+    <linearGradient id="ab-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#04070c"/>
+      <stop offset="60%" stop-color="#0a121c"/>
+      <stop offset="100%" stop-color="#07131d"/>
+    </linearGradient>
+    
+    <radialGradient id="ab-glow" cx="80%" cy="20%" r="70%">
+      <stop offset="0%" stop-color="#14b8a6" stop-opacity=".3"/>
+      <stop offset="100%" stop-color="#04070c" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Sushmita-Style Moving Border Ray -->
+    <linearGradient id="abRay" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="35%" stop-color="#5eead4"/>
+      <stop offset="70%" stop-color="#2dd4bf"/>
+      <stop offset="100%" stop-color="#0f766e" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Scanline Pattern -->
+    <pattern id="ab-scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="#5eead4" opacity=".03"/>
+    </pattern>
+
+    <!-- Terminal typing clip paths -->
+    <clipPath id="ab-c0"><rect class="ab-type" x="68" y="108" width="95" height="22" style="animation-delay:0.5s;animation-duration:0.4s;animation-timing-function:steps(7)"/></clipPath>
+    <clipPath id="ab-c1"><rect class="ab-type" x="68" y="132" width="640" height="22" style="animation-delay:1.0s;animation-duration:0.6s;animation-timing-function:steps(1)"/></clipPath>
+    <clipPath id="ab-c2"><rect class="ab-type" x="68" y="160" width="185" height="22" style="animation-delay:1.8s;animation-duration:0.5s;animation-timing-function:steps(17)"/></clipPath>
+    <clipPath id="ab-c3"><rect class="ab-type" x="68" y="184" width="640" height="22" style="animation-delay:2.4s;animation-duration:0.6s;animation-timing-function:steps(1)"/></clipPath>
+    <clipPath id="ab-c4"><rect class="ab-type" x="68" y="212" width="160" height="22" style="animation-delay:3.2s;animation-duration:0.5s;animation-timing-function:steps(15)"/></clipPath>
+    <clipPath id="ab-c5"><rect class="ab-type" x="68" y="236" width="640" height="22" style="animation-delay:3.8s;animation-duration:0.6s;animation-timing-function:steps(1)"/></clipPath>
+    <clipPath id="ab-c6"><rect class="ab-type" x="68" y="264" width="135" height="22" style="animation-delay:4.6s;animation-duration:0.4s;animation-timing-function:steps(12)"/></clipPath>
+    <clipPath id="ab-c7"><rect class="ab-type" x="68" y="288" width="640" height="22" style="animation-delay:5.1s;animation-duration:0.6s;animation-timing-function:steps(1)"/></clipPath>
+    <clipPath id="ab-c8"><rect class="ab-type" x="68" y="316" width="170" height="22" style="animation-delay:5.9s;animation-duration:0.5s;animation-timing-function:steps(16)"/></clipPath>
+    <clipPath id="ab-c9"><rect class="ab-type" x="68" y="340" width="640" height="22" style="animation-delay:6.5s;animation-duration:0.6s;animation-timing-function:steps(1)"/></clipPath>
+  </defs>
+
+  <style>
+    .ab-serif { font-family: Georgia, "Iowan Old Style", "Palatino Linotype", "Times New Roman", serif; }
+    .ab-mono { font-family: ui-monospace, SFMono-Regular, "JetBrains Mono", Menlo, Consolas, monospace; }
+    .ab-sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    .ab-type { transform-box: fill-box; transform-origin: left center; animation-name: ab-type; animation-fill-mode: both; }
+    .ab-card { animation: ab-in 1s cubic-bezier(.16,1,.3,1) both; }
+    .ab-fade { animation: ab-fade 1s ease both; }
+    @keyframes ab-type { 0% { transform: scaleX(0); } 85%, 100% { transform: scaleX(1); } }
+    @keyframes ab-in { from { opacity: 0; transform: translateX(20px); } to { opacity: 1; transform: none; } }
+    @keyframes ab-fade { from { opacity: 0; } to { opacity: 1; } }
+    @media (prefers-reduced-motion: reduce) { .ab-type, .ab-card, .ab-fade { animation: none; } }
+  </style>
+
+  <!-- Outer Card Frame -->
+  <rect width="1200" height="420" rx="18" fill="url(#ab-bg)"/>
+  <rect width="1200" height="420" rx="18" fill="url(#ab-glow)"/>
+  <rect x=".5" y=".5" width="1199" height="419" rx="17.5" fill="none" stroke="#1a2e3d" stroke-width="1.2"/>
+
+  <!-- MOVING RAY ON BORDER (Perimeter = 2 * (1200 + 420) = 3240) -->
+  <rect x=".5" y=".5" width="1199" height="419" rx="17.5" fill="none" 
+        stroke="url(#abRay)" stroke-width="2.2" stroke-linecap="round"
+        stroke-dasharray="450 2790">
+    <animate attributeName="stroke-dashoffset" values="3240;0" dur="6.5s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Left: Interactive Terminal Window -->
+  <g class="ab-fade">
+    <rect x="36" y="36" width="760" height="348" rx="14" fill="#060c14" stroke="#1a2e3d" stroke-width="1.2"/>
+    <rect x="36" y="36" width="760" height="348" rx="14" fill="url(#ab-scan)"/>
+    
+    <!-- Terminal Header Bar -->
+    <path d="M36 50 a14 14 0 0 1 14 -14 H782 a14 14 0 0 1 14 14 V70 H36 Z" fill="#091420"/>
+    <line x1="36" y1="70" x2="796" y2="70" stroke="#162736" stroke-width="1.2"/>
+    <circle cx="58" cy="53" r="5" fill="#ff5f56"/>
+    <circle cx="74" cy="53" r="5" fill="#ffbd2e"/>
+    <circle cx="90" cy="53" r="5" fill="#27c93f"/>
+    <text class="ab-mono" x="416" y="57" text-anchor="middle" font-size="11" font-weight="600" letter-spacing="1.5" fill="#5eead4">aryan@devstation: ~</text>
+  </g>
+
+  <!-- Terminal Commands and Output -->
+  <g class="ab-mono" font-size="13">
+    <!-- Command 1: whoami -->
+    <g clip-path="url(#ab-c0)">
+      <text x="64" y="122" fill="#2dd4bf" font-weight="700">$</text>
+      <text x="82" y="122" fill="#f0f6fc">whoami</text>
+    </g>
+    <g clip-path="url(#ab-c1)">
+      <text x="64" y="146" fill="#14b8a6">→</text>
+      <text x="82" y="146" fill="#8ca0b3">Aryan Gupta · Software Developer &amp; Systems Builder</text>
+    </g>
+
+    <!-- Command 2: cat education.txt -->
+    <g clip-path="url(#ab-c2)">
+      <text x="64" y="174" fill="#2dd4bf" font-weight="700">$</text>
+      <text x="82" y="174" fill="#f0f6fc">cat education.txt</text>
+    </g>
+    <g clip-path="url(#ab-c3)">
+      <text x="64" y="198" fill="#14b8a6">→</text>
+      <text x="82" y="198" fill="#8ca0b3">B.Tech Computer Science · PW Institute of Innovation · Bengaluru</text>
+    </g>
+
+    <!-- Command 3: cat stats.json -->
+    <g clip-path="url(#ab-c4)">
+      <text x="64" y="226" fill="#2dd4bf" font-weight="700">$</text>
+      <text x="82" y="226" fill="#f0f6fc">cat stats.json</text>
+    </g>
+    <g clip-path="url(#ab-c5)">
+      <text x="64" y="250" fill="#14b8a6">→</text>
+      <text x="82" y="250" fill="#2dd4bf" font-weight="600">800+ Solved</text>
+      <text x="175" y="250" fill="#8ca0b3">· 300D+ LeetCode Streak · ICPC '26 Prelim Rank 1168</text>
+    </g>
+
+    <!-- Command 4: ls ./arsenal -->
+    <g clip-path="url(#ab-c6)">
+      <text x="64" y="278" fill="#2dd4bf" font-weight="700">$</text>
+      <text x="82" y="278" fill="#f0f6fc">ls ./arsenal</text>
+    </g>
+    <g clip-path="url(#ab-c7)">
+      <text x="64" y="302" fill="#14b8a6">→</text>
+      <text x="82" y="302" fill="#5eead4">java</text>
+      <text x="122" y="302" fill="#38bdf8">c++</text>
+      <text x="156" y="302" fill="#818cf8">spring-boot</text>
+      <text x="254" y="302" fill="#2dd4bf">mysql</text>
+      <text x="306" y="302" fill="#f59e0b">hibernate</text>
+      <text x="388" y="302" fill="#38bdf8">docker</text>
+      <text x="448" y="302" fill="#f97316">git</text>
+    </g>
+
+    <!-- Command 5: echo $PHILOSOPHY -->
+    <g clip-path="url(#ab-c8)">
+      <text x="64" y="330" fill="#2dd4bf" font-weight="700">$</text>
+      <text x="82" y="330" fill="#f0f6fc">echo $PHILOSOPHY</text>
+    </g>
+    <g clip-path="url(#ab-c9)">
+      <text x="64" y="354" fill="#14b8a6">→</text>
+      <text x="82" y="354" fill="#cbd5e1" font-style="italic">"Get hired for what you build, not where you study."</text>
+    </g>
+  </g>
+
+  <!-- Animated Terminal Blinking Cursor -->
+  <rect x="64" y="362" width="7" height="15" fill="#2dd4bf" class="ab-fade" style="animation-delay:7.2s">
+    <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;.5;.5;1" dur="1s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Right: 3 Glassmorphic Highlight Cards -->
+  <!-- Card 1: Core Weapon -->
+  <g class="ab-card" style="animation-delay:1.2s">
+    <g transform="translate(824, 36)">
+      <rect width="340" height="102" rx="14" fill="#091824" stroke="#16384c" stroke-width="1.2"/>
+      <rect x="0" y="0" width="3.5" height="102" rx="2" fill="#2dd4bf"/>
+      <text class="ab-mono" x="20" y="26" font-size="10.5" font-weight="700" letter-spacing="2" fill="#2dd4bf">CORE STACK</text>
+      <text class="ab-serif" x="20" y="60" font-size="28" font-weight="300" fill="#f0f6fc">Java &amp; Spring</text>
+      <text class="ab-sans" x="20" y="84" font-size="12" fill="#8ca0b3">JDBC · JPA/Hibernate · REST APIs · MySQL</text>
+    </g>
+  </g>
+
+  <!-- Card 2: Algorithmic Discipline -->
+  <g class="ab-card" style="animation-delay:1.8s">
+    <g transform="translate(824, 158)">
+      <rect width="340" height="102" rx="14" fill="#091824" stroke="#16384c" stroke-width="1.2"/>
+      <rect x="0" y="0" width="3.5" height="102" rx="2" fill="#38bdf8"/>
+      <text class="ab-mono" x="20" y="26" font-size="10.5" font-weight="700" letter-spacing="2" fill="#38bdf8">ALGORITHMIC RIGOR</text>
+      <text class="ab-serif" x="20" y="60" font-size="28" font-weight="300" fill="#f0f6fc">C++ &amp; DSA</text>
+      <text class="ab-sans" x="20" y="84" font-size="12" fill="#8ca0b3">800+ solved · 300D+ streak · ICPC Prelim '26</text>
+    </g>
+  </g>
+
+  <!-- Card 3: Backend Craft -->
+  <g class="ab-card" style="animation-delay:2.4s">
+    <g transform="translate(824, 280)">
+      <rect width="340" height="104" rx="14" fill="#091824" stroke="#16384c" stroke-width="1.2"/>
+      <rect x="0" y="0" width="3.5" height="102" rx="2" fill="#818cf8"/>
+      <text class="ab-mono" x="20" y="26" font-size="10.5" font-weight="700" letter-spacing="2" fill="#818cf8">SYSTEM ARCHITECTURE</text>
+      <text class="ab-serif" x="20" y="60" font-size="28" font-weight="300" fill="#f0f6fc">Enterprise DB</text>
+      <text class="ab-sans" x="20" y="84" font-size="12" fill="#8ca0b3">Connection pooling · ACID · Cascade mapping</text>
+    </g>
+  </g>
+</svg>

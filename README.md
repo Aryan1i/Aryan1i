@@ -1,13 +1,13 @@
 <div align="center">
 
-  <!-- ================= BANNER WITH SUSHMITA MOVING RAY & EDITORIAL TYPOGRAPHY ================= -->
+  <!-- ================= BANNER WITH SUSHMITA MOVING RAY & DUAL-TONE NEON ACCENTS ================= -->
   <img src="assets/banner.svg" alt="Aryan Gupta Banner" width="100%" />
 
   <br/><br/>
 
-  <!-- ================= DYNAMIC TYPING SUBTITLE ================= -->
+  <!-- ================= DYNAMIC TYPING SUBTITLE (NO HAND EMOJI) ================= -->
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=24&duration=3000&pause=1200&color=2DD4BF&center=true&vCenter=true&multiline=true&repeat=true&width=750&height=70&lines=%F0%9F%91%8B+Hi%2C+I'm+Aryan+Gupta;Software+Developer+%E2%80%A2+DSA+%26+CP+Enthusiast;800%2B+Problems+Solved+%E2%80%A2+300%2B+Day+LeetCode+Streak" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=24&duration=3000&pause=1200&color=2DD4BF&center=true&vCenter=true&multiline=true&repeat=true&width=750&height=70&lines=Hi%2C+I'm+Aryan+Gupta;Software+Developer+%E2%80%A2+DSA+%26+CP+Enthusiast;800%2B+Problems+Solved+%E2%80%A2+300%2B+Day+LeetCode+Streak" alt="Typing SVG" />
   </a>
 
   <br/>
@@ -54,13 +54,6 @@
   <img src="https://komarev.com/ghpvc/?username=Aryan1i&label=PROFILE%20VIEWS&color=2dd4bf&style=for-the-badge" alt="Profile Views" />
 
 </div>
-
-<br/><br/>
-
-<!-- Glowing Line with Moving Point Divider -->
-<p align="center">
-  <img src="assets/divider-pulse.svg" width="100%" alt="Divider" />
-</p>
 
 <br/><br/>
 
@@ -124,13 +117,6 @@ availability:
 
 <br/><br/>
 
-<!-- Glowing Line with Moving Point Divider -->
-<p align="center">
-  <img src="assets/divider-pulse.svg" width="100%" alt="Divider" />
-</p>
-
-<br/><br/>
-
 <!-- ====================================================== -->
 <!--                   02 // RECOGNITION                    -->
 <!-- ====================================================== -->
@@ -142,13 +128,6 @@ availability:
 
 <!-- Sushmita-Style Recognition Card with Outlined Watermarks, Moving Border Rays & Score Strip -->
 <img src="assets/recognition-card.svg" width="100%" alt="Recognition: ICPC India Preliminary Rank 1168, 300+ Days LeetCode Streak, 800+ Problems Solved." />
-
-<br/><br/>
-
-<!-- Glowing Line with Moving Point Divider -->
-<p align="center">
-  <img src="assets/divider-pulse.svg" width="100%" alt="Divider" />
-</p>
 
 <br/><br/>
 
@@ -167,13 +146,6 @@ availability:
   <img src="assets/tech-stack.svg" alt="Animated Moving Tech Arsenal" width="100%" />
 
 </div>
-
-<br/><br/>
-
-<!-- Glowing Line with Moving Point Divider -->
-<p align="center">
-  <img src="assets/divider-pulse.svg" width="100%" alt="Divider" />
-</p>
 
 <br/><br/>
 
@@ -262,13 +234,6 @@ availability:
 
 <br/><br/>
 
-<!-- Glowing Line with Moving Point Divider -->
-<p align="center">
-  <img src="assets/divider-pulse.svg" width="100%" alt="Divider" />
-</p>
-
-<br/><br/>
-
 <!-- ====================================================== -->
 <!--                  05 // COMMIT LOG                      -->
 <!-- ====================================================== -->
@@ -280,17 +245,10 @@ availability:
 
   <br/><br/>
 
-  <!-- Real GitHub Contribution Snake with Sushmita Serpentine Motion & Moving Border Ray -->
+  <!-- Real GitHub Contribution Snake with Sushmita Serpentine Motion & Moving Border Ray (Overlaps Fixed!) -->
   <img src="assets/contribution-snake.svg" alt="GitHub Contribution Snake Animation" width="100%" />
 
 </div>
-
-<br/><br/>
-
-<!-- Glowing Line with Moving Point Divider -->
-<p align="center">
-  <img src="assets/divider-pulse.svg" width="100%" alt="Divider" />
-</p>
 
 <br/><br/>
 
@@ -316,13 +274,6 @@ availability:
   </a>
 
 </div>
-
-<br/><br/>
-
-<!-- Glowing Line with Moving Point Divider -->
-<p align="center">
-  <img src="assets/divider-pulse.svg" width="100%" alt="Divider" />
-</p>
 
 <br/><br/>
 
@@ -413,13 +364,6 @@ availability:
 </table>
 
 </div>
-
-<br/><br/>
-
-<!-- Glowing Line with Moving Point Divider -->
-<p align="center">
-  <img src="assets/divider-pulse.svg" width="100%" alt="Divider" />
-</p>
 
 <br/><br/>
 

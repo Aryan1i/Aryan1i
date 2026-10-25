@@ -3,20 +3,21 @@
   <!-- Background Gradient -->
   <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
     <stop offset="0%" stop-color="#04070c"/>
-    <stop offset="45%" stop-color="#0a121c"/>
-    <stop offset="85%" stop-color="#0e1b27"/>
-    <stop offset="100%" stop-color="#07131d"/>
+    <stop offset="45%" stop-color="#09121d"/>
+    <stop offset="85%" stop-color="#0c1824"/>
+    <stop offset="100%" stop-color="#060e17"/>
   </linearGradient>
 
-  <!-- Cyan/Teal Moving Ray Gradient (Sushmita Style) -->
+  <!-- Cyan/Teal to Violet Dual-Tone Moving Ray Gradient -->
   <linearGradient id="bannerRay" x1="0" y1="0" x2="1" y2="1">
     <stop offset="0%" stop-color="#ffffff"/>
-    <stop offset="35%" stop-color="#5eead4"/>
-    <stop offset="70%" stop-color="#2dd4bf"/>
+    <stop offset="30%" stop-color="#5eead4"/>
+    <stop offset="65%" stop-color="#2dd4bf"/>
+    <stop offset="85%" stop-color="#818cf8"/>
     <stop offset="100%" stop-color="#0f766e" stop-opacity="0"/>
   </linearGradient>
 
-  <!-- Sheen on Main Name (Sushmita Style) -->
+  <!-- Sheen on Main Name -->
   <linearGradient id="titleSheen" x1="-300" y1="0" x2="0" y2="0" gradientUnits="userSpaceOnUse">
     <stop offset="0%" stop-color="#ffffff"/>
     <stop offset="50%" stop-color="#5eead4"/>
@@ -46,8 +47,8 @@
 
   <!-- Tech Grid Overlay -->
   <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
-    <path d="M 36 0 L 0 0 0 36" fill="none" stroke="#132433" stroke-width="0.9" opacity="0.45"/>
-    <circle cx="36" cy="36" r="0.8" fill="#1e3a52" opacity="0.6"/>
+    <path d="M 36 0 L 0 0 0 36" fill="none" stroke="#132433" stroke-width="0.9" opacity="0.4"/>
+    <circle cx="36" cy="36" r="0.8" fill="#1e3a52" opacity="0.5"/>
   </pattern>
 
   <!-- Scanning Laser Gradient -->
@@ -60,7 +61,7 @@
   <!-- Circuit Line Gradient -->
   <linearGradient id="circuitGrad" x1="0" y1="0" x2="1" y2="0">
     <stop offset="0%" stop-color="#143447"/>
-    <stop offset="50%" stop-color="#2dd4bf" stop-opacity="0.8"/>
+    <stop offset="50%" stop-color="#2dd4bf" stop-opacity="0.85"/>
     <stop offset="100%" stop-color="#143447"/>
   </linearGradient>
 
@@ -142,83 +143,84 @@
 </text>
 
 <!-- ================= RIGHT SIDE: TECH CIRCUIT DIAGRAM ================= -->
-<text class="s-mono" x="710" y="106" fill="#5eead4" font-size="11" font-weight="700" letter-spacing="2">
+<!-- Repositioned cleanly above circuit so NO overlapping occurs -->
+<text class="s-mono" x="690" y="102" fill="#5eead4" font-size="10.5" font-weight="700" letter-spacing="2">
   // ARCHITECTURE &amp; SYSTEMS
 </text>
 
-<!-- Circuit Traces -->
-<path d="M 710 165 L 760 165 L 790 135 L 860 135 L 890 170 L 970 170 L 1000 135 L 1080 135" 
-      fill="none" stroke="url(#circuitGrad)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+<!-- Circuit Traces: y-values shifted for clean vertical spacing -->
+<path d="M 690 170 L 740 170 L 775 142 L 850 142 L 885 178 L 965 178 L 995 142 L 1080 142" 
+      fill="none" stroke="url(#circuitGrad)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
 
-<path d="M 790 135 L 790 205 L 850 205 L 890 170" 
-      fill="none" stroke="#143447" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 775 142 L 775 210 L 835 210 L 885 178" 
+      fill="none" stroke="#143447" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
 
-<path d="M 970 170 L 970 205 L 1030 205 L 1060 175" 
-      fill="none" stroke="#143447" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 965 178 L 965 210 L 1025 210 L 1055 180" 
+      fill="none" stroke="#143447" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
 
 <!-- Node 1: Java (Primary) -->
-<circle cx="710" cy="165" r="7.5" fill="#f59e0b" filter="url(#nodeGlow)"/>
-<circle cx="710" cy="165" r="3" fill="#ffffff"/>
-<text class="s-mono" x="710" y="190" fill="#fbd38d" font-size="12" font-weight="700" text-anchor="middle">Java</text>
-<text class="s-mono" x="710" y="203" fill="#64748b" font-size="9.5" text-anchor="middle">JDBC/JPA</text>
+<circle cx="690" cy="170" r="7.5" fill="#f59e0b" filter="url(#nodeGlow)"/>
+<circle cx="690" cy="170" r="3" fill="#ffffff"/>
+<text class="s-mono" x="690" y="195" fill="#fbd38d" font-size="11.5" font-weight="700" text-anchor="middle">Java</text>
+<text class="s-mono" x="690" y="208" fill="#64748b" font-size="9" text-anchor="middle">JDBC/JPA</text>
 
 <!-- Node 2: C++ (CP/DSA) -->
-<circle cx="860" cy="135" r="7.5" fill="#06b6d4" filter="url(#nodeGlow)"/>
-<circle cx="860" cy="135" r="3" fill="#ffffff"/>
-<text class="s-mono" x="860" y="118" fill="#67e8f9" font-size="12" font-weight="700" text-anchor="middle">C++</text>
-<text class="s-mono" x="860" y="105" fill="#64748b" font-size="9.5" text-anchor="middle">DSA / CP</text>
+<circle cx="850" cy="142" r="7.5" fill="#06b6d4" filter="url(#nodeGlow)"/>
+<circle cx="850" cy="142" r="3" fill="#ffffff"/>
+<text class="s-mono" x="850" y="127" fill="#67e8f9" font-size="11.5" font-weight="700" text-anchor="middle">C++</text>
+<text class="s-mono" x="850" y="115" fill="#64748b" font-size="9" text-anchor="middle">DSA/CP</text>
 
 <!-- Node 3: Python -->
-<circle cx="850" cy="205" r="6" fill="#3b82f6" filter="url(#nodeGlow)"/>
-<text class="s-mono" x="850" y="225" fill="#93c5fd" font-size="11" font-weight="600" text-anchor="middle">Python</text>
+<circle cx="835" cy="210" r="6" fill="#3b82f6" filter="url(#nodeGlow)"/>
+<text class="s-mono" x="835" y="228" fill="#93c5fd" font-size="10.5" font-weight="600" text-anchor="middle">Python</text>
 
 <!-- Node 4: SQL & Database -->
-<circle cx="970" cy="170" r="7" fill="#10b981" filter="url(#nodeGlow)"/>
-<circle cx="970" cy="170" r="2.5" fill="#ffffff"/>
-<text class="s-mono" x="970" y="152" fill="#6ee7b7" font-size="12" font-weight="700" text-anchor="middle">SQL</text>
-<text class="s-mono" x="970" y="140" fill="#64748b" font-size="9.5" text-anchor="middle">MySQL</text>
+<circle cx="965" cy="178" r="7" fill="#10b981" filter="url(#nodeGlow)"/>
+<circle cx="965" cy="178" r="2.5" fill="#ffffff"/>
+<text class="s-mono" x="965" y="162" fill="#6ee7b7" font-size="11.5" font-weight="700" text-anchor="middle">SQL</text>
+<text class="s-mono" x="965" y="150" fill="#64748b" font-size="9" text-anchor="middle">MySQL</text>
 
 <!-- Node 5: JavaScript / Web -->
-<circle cx="1030" cy="205" r="6" fill="#facc15" filter="url(#nodeGlow)"/>
-<text class="s-mono" x="1030" y="225" fill="#fde047" font-size="11" font-weight="600" text-anchor="middle">JS/Web</text>
+<circle cx="1025" cy="210" r="6" fill="#facc15" filter="url(#nodeGlow)"/>
+<text class="s-mono" x="1025" y="228" fill="#fde047" font-size="10.5" font-weight="600" text-anchor="middle">JS/Web</text>
 
 <!-- Node 6: Docker / Git -->
-<circle cx="1080" cy="135" r="7" fill="#38bdf8" filter="url(#nodeGlow)"/>
-<circle cx="1080" cy="135" r="2.5" fill="#ffffff"/>
-<text class="s-mono" x="1080" y="118" fill="#7dd3fc" font-size="12" font-weight="700" text-anchor="middle">Docker</text>
-<text class="s-mono" x="1080" y="105" fill="#64748b" font-size="9.5" text-anchor="middle">Git/Maven</text>
+<circle cx="1080" cy="142" r="7" fill="#38bdf8" filter="url(#nodeGlow)"/>
+<circle cx="1080" cy="142" r="2.5" fill="#ffffff"/>
+<text class="s-mono" x="1080" y="127" fill="#7dd3fc" font-size="11.5" font-weight="700" text-anchor="middle">Docker</text>
+<text class="s-mono" x="1080" y="115" fill="#64748b" font-size="9" text-anchor="middle">Git/Maven</text>
 
 <!-- Traveling Energy Signal across the circuit -->
-<circle r="5" fill="#ffffff" filter="url(#signalGlow)">
+<circle r="4.5" fill="#ffffff" filter="url(#signalGlow)">
   <animateMotion dur="5s" repeatCount="indefinite"
-    path="M 710 165 L 760 165 L 790 135 L 860 135 L 890 170 L 970 170 L 1000 135 L 1080 135"/>
+    path="M 690 170 L 740 170 L 775 142 L 850 142 L 885 178 L 965 178 L 995 142 L 1080 142"/>
 </circle>
 
-<!-- ================= LOWER METRICS ROW ================= -->
+<!-- ================= LOWER METRICS ROW (FIXED OVERLAPS) ================= -->
 <line x1="72" y1="250" x2="1128" y2="250" stroke="#162736" stroke-width="1.2"/>
 
-<!-- Metric 1: Problems Solved -->
+<!-- Metric 1: Problems Solved (Cleanly spaced, NO overlap) -->
 <g transform="translate(72, 266)">
   <rect width="230" height="60" rx="10" fill="#091824" stroke="#16384c" stroke-width="1"/>
   <text class="s-mono" x="16" y="24" fill="#64748b" font-size="10.5" font-weight="600" letter-spacing="1">TOTAL SOLVED</text>
-  <text class="s-serif" x="16" y="50" fill="#2dd4bf" font-size="24" font-weight="700">800+ Unique</text>
-  <text class="s-mono" x="165" y="48" fill="#64748b" font-size="10.5">Problems</text>
+  <text class="s-serif" x="16" y="50" fill="#2dd4bf" font-size="24" font-weight="700">800+</text>
+  <text class="s-mono" x="96" y="48" fill="#8ca0b3" font-size="11">Problems Solved</text>
 </g>
 
-<!-- Metric 2: LeetCode Rating & Streak -->
+<!-- Metric 2: LeetCode Rating & Streak (Cleanly spaced, NO overlap) -->
 <g transform="translate(322, 266)">
   <rect width="250" height="60" rx="10" fill="#091824" stroke="#16384c" stroke-width="1"/>
   <text class="s-mono" x="16" y="24" fill="#64748b" font-size="10.5" font-weight="600" letter-spacing="1">LEETCODE CONTEST</text>
-  <text class="s-serif" x="16" y="50" fill="#f59e0b" font-size="24" font-weight="700">1592 Peak</text>
-  <text class="s-mono" x="145" y="48" fill="#2dd4bf" font-size="11" font-weight="700">· 300d+ Streak</text>
+  <text class="s-serif" x="16" y="50" fill="#f59e0b" font-size="24" font-weight="700">1592</text>
+  <text class="s-mono" x="88" y="48" fill="#2dd4bf" font-size="11" font-weight="700">· 300D+ Streak 🔥</text>
 </g>
 
-<!-- Metric 3: ICPC & CodeChef -->
+<!-- Metric 3: ICPC & CodeChef (FIXED: '26 and Rank 1168 completely separated) -->
 <g transform="translate(592, 266)">
   <rect width="260" height="60" rx="10" fill="#091824" stroke="#16384c" stroke-width="1"/>
   <text class="s-mono" x="16" y="24" fill="#64748b" font-size="10.5" font-weight="600" letter-spacing="1">CONTEST HONORS</text>
-  <text class="s-serif" x="16" y="50" fill="#38bdf8" font-size="22" font-weight="700">ICPC Prelim '26</text>
-  <text class="s-mono" x="180" y="48" fill="#93c5fd" font-size="11">Rank 1168</text>
+  <text class="s-serif" x="16" y="50" fill="#38bdf8" font-size="22" font-weight="700">ICPC '26</text>
+  <text class="s-mono" x="120" y="48" fill="#5eead4" font-size="12" font-weight="700">· Rank 1168</text>
 </g>
 
 <!-- Metric 4: Philosophy Quote (CodeDNA) -->

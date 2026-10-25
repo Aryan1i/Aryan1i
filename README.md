@@ -34,13 +34,20 @@
     </a>
   </p>
 
+  <br/>
+
   <!-- Profile Views -->
   <img src="https://komarev.com/ghpvc/?username=Aryan1i&label=PROFILE%20VIEWS&color=2dd4bf&style=for-the-badge" alt="Profile Views" />
 
 </div>
 
-<br/>
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+<br/><br/>
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+</p>
+
+<br/><br/>
 
 <!-- ====================================================== -->
 <!--                      ABOUT ME                          -->
@@ -70,7 +77,13 @@ achievements:
   - icpc_india_preliminary_2026: Tentative Rank 1168
 ```
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+<br/><br/>
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+</p>
+
+<br/><br/>
 
 <!-- ====================================================== -->
 <!--                   TECH ARSENAL                         -->
@@ -80,12 +93,20 @@ achievements:
 
 <div align="center">
 
+  <br/>
+
   <!-- Smooth Infinite Moving Marquee -->
   <img src="assets/tech-stack.svg" alt="Animated Moving Tech Arsenal" width="100%" />
 
 </div>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+<br/><br/>
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+</p>
+
+<br/><br/>
 
 <!-- ====================================================== -->
 <!--             COMPETITIVE PROGRAMMING ARENA              -->
@@ -94,6 +115,8 @@ achievements:
 ## <img src="https://media.giphy.com/media/W5eoZHPpUx9sapR0eu/giphy.gif" width="34"> &nbsp;Competitive Programming Arena
 
 <div align="center">
+
+  <br/>
 
   <!-- Platform Link Badges -->
   <p>
@@ -111,8 +134,10 @@ achievements:
     </a>
   </p>
 
+  <br/>
+
   <!-- Highlight Stat Badges -->
-  <table>
+  <table border="0" align="center" cellpadding="6">
     <tr>
       <td align="center" width="25%">
         <img src="https://img.shields.io/badge/800+-Problems_Solved-2dd4bf?style=for-the-badge" /><br/>
@@ -133,10 +158,10 @@ achievements:
     </tr>
   </table>
 
-  <br/>
+  <br/><br/>
 
   <!-- 2x2 Profile Cards Grid: Row 1 = LeetCode + CodeChef | Row 2 = Codeforces + GeeksforGeeks -->
-  <table border="0" align="center">
+  <table border="0" align="center" cellpadding="8" cellspacing="8">
     <tr>
       <td align="center" valign="middle">
         <a href="https://leetcode.com/u/_aryan1i/" target="_blank">
@@ -163,14 +188,20 @@ achievements:
     </tr>
   </table>
 
-  <br/>
+  <br/><br/>
 
   <!-- ICPC Honor -->
   <img src="https://img.shields.io/badge/🏆_ICPC_India_Preliminary_Online_Contest_2026-Rank_1168-14b8a6?style=for-the-badge" />
 
 </div>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+<br/><br/>
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+</p>
+
+<br/><br/>
 
 <!-- ====================================================== -->
 <!--                 CONTRIBUTION JOURNEY                   -->
@@ -182,12 +213,20 @@ achievements:
 
   <p><sub><i>Dynamic contribution grid snake tracking continuous daily commit activity</i></sub></p>
 
-  <!-- Contribution Grid Snake Animation -->
-  <img src="https://raw.githubusercontent.com/Aryan1i/Aryan1i/output/github-contribution-grid-snake.svg" alt="GitHub Contribution Snake Animation" width="100%" />
+  <br/>
+
+  <!-- Contribution Grid Snake Animation (Dark Neon Theme) -->
+  <img src="https://raw.githubusercontent.com/Aryan1i/Aryan1i/output/github-contribution-grid-snake-dark.svg" alt="GitHub Contribution Snake Animation" width="100%" />
 
 </div>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+<br/><br/>
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+</p>
+
+<br/><br/>
 
 <!-- ====================================================== -->
 <!--                   GITHUB ANALYTICS                     -->
@@ -196,6 +235,8 @@ achievements:
 ## <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="28"> &nbsp;GitHub Analytics
 
 <div align="center">
+
+  <br/>
 
   <!-- Streak Stats Card -->
   <a href="https://github.com/Aryan1i">
@@ -209,7 +250,13 @@ achievements:
 
 </div>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+<br/><br/>
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+</p>
+
+<br/><br/>
 
 <!-- ====================================================== -->
 <!--                   FEATURED PROJECTS                    -->
@@ -219,7 +266,9 @@ achievements:
 
 <div align="center">
 
-<table width="100%">
+<br/>
+
+<table width="100%" cellpadding="8" cellspacing="8">
 <tr>
   <td width="50%" valign="top">
     <h3 align="center">🧬 CodeDNA</h3>
@@ -296,7 +345,13 @@ achievements:
 
 </div>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+<br/><br/>
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+</p>
+
+<br/><br/>
 
 <!-- ====================================================== -->
 <!--                   CODING VIBE                          -->
@@ -306,15 +361,19 @@ achievements:
 
 <div align="center">
 
-  <!-- Aesthetic Developer Workspace Animation (No names / Clean theme) -->
-  <img src="assets/coding-vibe.gif" alt="Aesthetic Coding Vibe" width="700" />
+  <br/>
+
+  <!-- Aesthetic Developer Workspace Animation (Dark Cyberpunk Theme) -->
+  <p align="center">
+    <img src="assets/coding-vibe.gif" alt="Aesthetic Coding Vibe" width="850" />
+  </p>
 
   <br/><br/>
 
   <!-- User's Philosophy Quote -->
-  <table border="0">
+  <table border="0" align="center">
     <tr>
-      <td align="center" style="padding: 16px 28px; background: #161b22; border-radius: 12px; border: 1px solid #30363d;">
+      <td align="center" style="padding: 18px 36px; background: #0d1117; border-radius: 12px; border: 1.5px solid #2dd4bf;">
         <font size="4" color="#2dd4bf">
           <i>“If you're disciplined, you still can't beat someone who's obsessed.”</i>
         </font>
@@ -322,7 +381,7 @@ achievements:
     </tr>
   </table>
 
-  <br/>
+  <br/><br/>
 
   <!-- Subtle Footer Wave -->
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:04070c,20:0a121c,50:0f766e,80:2dd4bf,100:5eead4&height=100&section=footer&fontSize=0" width="100%" />

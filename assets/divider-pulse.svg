@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 24" width="1200" height="24" role="img">
+  <defs>
+    <linearGradient id="div-line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#04070c" stop-opacity="0"/>
+      <stop offset="15%" stop-color="#14b8a6"/>
+      <stop offset="50%" stop-color="#2dd4bf"/>
+      <stop offset="85%" stop-color="#14b8a6"/>
+      <stop offset="100%" stop-color="#04070c" stop-opacity="0"/>
+    </linearGradient>
+
+    <radialGradient id="div-pulse">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="35%" stop-color="#5eead4"/>
+      <stop offset="75%" stop-color="#2dd4bf" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#04070c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Glowing Horizontal Line -->
+  <line x1="40" y1="12" x2="1160" y2="12" stroke="url(#div-line)" stroke-width="1.6"/>
+
+  <!-- Glowing Point Moving Back and Forth Continuously -->
+  <circle cy="12" r="7" fill="url(#div-pulse)">
+    <animate attributeName="cx" values="40;1160;40" dur="5s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines=".45 0 .55 1;.45 0 .55 1"/>
+    <animate attributeName="opacity" values="0.4;1;1;0.4" dur="5s" repeatCount="indefinite"/>
+  </circle>
+</svg>

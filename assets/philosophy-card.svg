@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 160" width="1200" height="160" role="img">
+  <defs>
+    <linearGradient id="phil-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a121c"/>
+      <stop offset="100%" stop-color="#04070c"/>
+    </linearGradient>
+
+    <radialGradient id="phil-glow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#2dd4bf" stop-opacity=".25"/>
+      <stop offset="100%" stop-color="#04070c" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Moving Ray Gradient -->
+    <linearGradient id="phil-trace" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="35%" stop-color="#5eead4"/>
+      <stop offset="70%" stop-color="#2dd4bf"/>
+      <stop offset="100%" stop-color="#0f766e" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="phil-sheen" x1="-300" y1="0" x2="0" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#5eead4"/>
+      <stop offset="50%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#5eead4"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="0 0; 1500 0; 1500 0" keyTimes="0;.45;1" dur="6.5s" repeatCount="indefinite"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .p-serif { font-family: Georgia, "Iowan Old Style", "Palatino Linotype", "Times New Roman", serif; }
+    .p-mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
+  </style>
+
+  <rect width="1200" height="160" rx="16" fill="url(#phil-bg)"/>
+  <rect width="1200" height="160" rx="16" fill="url(#phil-glow)"/>
+  <rect x=".5" y=".5" width="1199" height="159" rx="15.5" fill="none" stroke="#1a2e3d" stroke-width="1.2"/>
+
+  <!-- MOVING RAY ON BORDER -->
+  <!-- Perimeter = 2 * (1200 + 160) = 2720 -->
+  <rect x=".5" y=".5" width="1199" height="159" rx="15.5" fill="none"
+        stroke="url(#phil-trace)" stroke-width="2.2" stroke-linecap="round"
+        stroke-dasharray="400 2320">
+    <animate attributeName="stroke-dashoffset" values="2720;0" dur="5.5s" repeatCount="indefinite"/>
+  </rect>
+
+  <text class="p-mono" x="600" y="44" text-anchor="middle" font-size="12" font-weight="700" letter-spacing="3" fill="#2dd4bf">
+    ⚡ ENGINEERING MANIFESTO &amp; PHILOSOPHY ⚡
+  </text>
+
+  <!-- Quote in Editorial Serif Italic (Sushmita Style) -->
+  <text class="p-serif" x="600" y="98" text-anchor="middle" font-size="30" font-weight="300" font-style="italic" fill="url(#phil-sheen)">
+    “If you're disciplined, you still can't beat someone who's obsessed.”
+  </text>
+
+  <text class="p-mono" x="600" y="132" text-anchor="middle" font-size="12" fill="#64748b">
+    — Aryan Gupta · Bengaluru, India
+  </text>
+</svg>

@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" width="1200" height="120" role="img">
+  <defs>
+    <!-- Cyan/Teal Gradient Line -->
+    <linearGradient id="ta-line-03" gradientUnits="userSpaceOnUse" x1="40" y1="0" x2="1160" y2="0">
+      <stop offset="0%" stop-color="#2dd4bf"/>
+      <stop offset="60%" stop-color="#14b8a6"/>
+      <stop offset="100%" stop-color="#04070c" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Traveling Sheen on Italic Word -->
+    <linearGradient id="ta-sheen-03" gradientUnits="userSpaceOnUse" x1="-300" y1="0" x2="0" y2="0">
+      <stop offset="0%" stop-color="#5eead4"/>
+      <stop offset="50%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#5eead4"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="0 0; 1500 0; 1500 0" keyTimes="0;.4;1" dur="7s" begin="1.2s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <!-- Glowing Traveling Pulse Point -->
+    <radialGradient id="ta-pulse-03">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="35%" stop-color="#5eead4" stop-opacity="1"/>
+      <stop offset="75%" stop-color="#2dd4bf" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0f766e" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <style>
+    .ta-serif { font-family: Georgia, "Iowan Old Style", "Palatino Linotype", "Times New Roman", serif; }
+    .ta-mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
+    .ta-sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .ta-draw { stroke-dasharray: 1200; stroke-dashoffset: 1200; animation: ta-draw 1.8s cubic-bezier(.65,0,.35,1) .5s forwards; }
+    @keyframes ta-draw { to { stroke-dashoffset: 0; } }
+  </style>
+
+  <!-- Number & Tag -->
+  <g>
+    <text class="ta-mono" x="40" y="34" font-size="12" letter-spacing="3" fill="#2dd4bf">
+      <tspan fill="#5eead4">03</tspan>   //   TOOLKIT
+    </text>
+  </g>
+
+  <!-- Main Title (Editorial Serif font with Italic Sheen) -->
+  <g>
+    <text class="ta-serif" x="38" y="84" font-size="44" font-weight="300" letter-spacing="-1" fill="#f0f6fc">
+      The tools I <tspan font-style="italic" fill="url(#ta-sheen-03)">reach for.</tspan>
+    </text>
+  </g>
+
+  <!-- Subtitle Tag on Right -->
+  <g>
+    <text class="ta-mono" x="1160" y="34" text-anchor="end" font-size="10.5" letter-spacing="2.4" fill="#64748b">
+      TECH ARSENAL
+    </text>
+  </g>
+
+  <!-- THE LINE: d="M40 106 H1160" -->
+  <path class="ta-draw" d="M40 106 H1160" stroke="url(#ta-line-03)" stroke-width="1.6"/>
+
+  <!-- THE POINT MOVING IN A LINE (Sushmita Style: continuously glides across line) -->
+  <circle cy="106" r="7.5" fill="url(#ta-pulse-03)">
+    <animate attributeName="cx" values="40;1160;40" dur="5.5s" begin="0.8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines=".45 0 .55 1;.45 0 .55 1"/>
+    <animate attributeName="opacity" values="0.3;1;1;0.3" dur="5.5s" begin="0.8s" repeatCount="indefinite"/>
+  </circle>
+</svg>

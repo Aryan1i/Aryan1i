@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 410" width="1200" height="410" role="img">
+  <defs>
+    <linearGradient id="ach-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a121c"/>
+      <stop offset="100%" stop-color="#04070c"/>
+    </linearGradient>
+
+    <radialGradient id="ach-glow-a" cx="85%" cy="0%" r="90%">
+      <stop offset="0%" stop-color="#14b8a6" stop-opacity=".45"/>
+      <stop offset="100%" stop-color="#04070c" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="ach-glow-b" cx="90%" cy="0%" r="90%">
+      <stop offset="0%" stop-color="#2dd4bf" stop-opacity=".35"/>
+      <stop offset="100%" stop-color="#04070c" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Moving Ray Gradient -->
+    <linearGradient id="ach-trace" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="45%" stop-color="#5eead4"/>
+      <stop offset="80%" stop-color="#2dd4bf"/>
+      <stop offset="100%" stop-color="#0f766e" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Outlined Watermark Text -->
+    <linearGradient id="ach-outline" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2dd4bf" stop-opacity=".25"/>
+      <stop offset="100%" stop-color="#2dd4bf" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="ach-sheen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#5eead4" stop-opacity=".15"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+
+    <clipPath id="ach-clip-a"><rect x="0" y="0" width="700" height="240" rx="16"/></clipPath>
+    <clipPath id="ach-clip-b"><rect x="0" y="0" width="476" height="240" rx="16"/></clipPath>
+  </defs>
+
+  <style>
+    .ach-serif { font-family: Georgia, "Iowan Old Style", "Palatino Linotype", "Times New Roman", serif; }
+    .ach-mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
+    .ach-sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .ach-draw { stroke-dasharray: 1200; stroke-dashoffset: 1200; animation: ach-draw 2.6s cubic-bezier(.65,0,.35,1) .8s forwards; }
+    @keyframes ach-draw { to { stroke-dashoffset: 0; } }
+  </style>
+
+  <!-- Card Base -->
+  <rect width="1200" height="410" rx="20" fill="url(#ach-bg)"/>
+  <rect x=".5" y=".5" width="1199" height="409" rx="19.5" fill="none" stroke="#1a2e3d" stroke-width="1.2"/>
+
+  <!-- ================= MOVING RAY ON OUTER BORDER ================= -->
+  <!-- Perimeter = 2 * (1200 + 410) = 3220 -->
+  <rect x=".5" y=".5" width="1199" height="409" rx="19.5" fill="none"
+        stroke="url(#ach-trace)" stroke-width="2.2" stroke-linecap="round"
+        stroke-dasharray="450 2770">
+    <animate attributeName="stroke-dashoffset" values="3220;0" dur="6.8s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Hero Card 1: ICPC India Preliminary 2026 -->
+  <g transform="translate(24 24)">
+    <g clip-path="url(#ach-clip-a)">
+      <rect width="700" height="240" fill="#07121b"/>
+      <rect width="700" height="240" fill="url(#ach-glow-a)"/>
+      <text class="ach-serif" x="684" y="118" text-anchor="end" font-size="118" font-weight="300" letter-spacing="-6" fill="url(#ach-outline)">ICPC '26</text>
+      <rect x="-300" y="0" width="260" height="240" fill="url(#ach-sheen)" transform="skewX(-18)">
+        <animate attributeName="x" values="-300;900;900" keyTimes="0;.35;1" dur="9s" begin="2s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+    <rect x=".5" y=".5" width="699" height="239" rx="15.5" fill="none" stroke="#1a2e3d" stroke-width="1"/>
+    <!-- Moving Ray on Hero Sub-Card -->
+    <rect x=".5" y=".5" width="699" height="239" rx="15.5" fill="none" stroke="url(#ach-trace)" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="340 1540">
+      <animate attributeName="stroke-dashoffset" values="1880;0" dur="5.5s" repeatCount="indefinite"/>
+    </rect>
+    
+    <text class="ach-mono" x="36" y="52" font-size="12" letter-spacing="2.6" fill="#2dd4bf">INTERNATIONAL COLLEGIATE PROGRAMMING CONTEST</text>
+    <text class="ach-serif" x="34" y="114" font-size="46" font-weight="300" letter-spacing="-1" fill="#f0f6fc">Rank 1168</text>
+    <text class="ach-sans" x="36" y="146" font-size="15" fill="#8ca0b3">ICPC India Preliminary Online Contest 2026</text>
+
+    <!-- Mini stats pill row -->
+    <g transform="translate(36, 175)">
+      <rect width="180" height="32" rx="16" fill="#0d2b2c" stroke="#14b8a6" stroke-width="0.8"/>
+      <text class="ach-mono" x="90" y="20" font-size="11.5" font-weight="700" fill="#2dd4bf" text-anchor="middle">⚡ National Qualifier</text>
+    </g>
+  </g>
+
+  <!-- Hero Card 2: LeetCode Streak & Peak Rating -->
+  <g transform="translate(748 24)">
+    <g clip-path="url(#ach-clip-b)">
+      <rect width="428" height="240" fill="#07121b"/>
+      <rect width="428" height="240" fill="url(#ach-glow-b)"/>
+      <text class="ach-serif" x="410" y="118" text-anchor="end" font-size="108" font-weight="300" letter-spacing="-5" fill="url(#ach-outline)">300D</text>
+    </g>
+    <rect x=".5" y=".5" width="427" height="239" rx="15.5" fill="none" stroke="#1a2e3d" stroke-width="1"/>
+    <!-- Moving Ray on Side Sub-Card -->
+    <rect x=".5" y=".5" width="427" height="239" rx="15.5" fill="none" stroke="url(#ach-trace)" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="260 1070">
+      <animate attributeName="stroke-dashoffset" values="1330;0" dur="5.5s" repeatCount="indefinite"/>
+    </rect>
+    <text class="ach-mono" x="36" y="52" font-size="12" letter-spacing="2.6" fill="#f97316">RELENTLESS PRACTICE</text>
+    <text class="ach-serif" x="34" y="114" font-size="46" font-weight="300" letter-spacing="-1" fill="#f0f6fc">300+ Days 🔥</text>
+    <text class="ach-sans" x="36" y="146" font-size="15" fill="#8ca0b3">Continuous Daily LeetCode Streak</text>
+    <text class="ach-mono" x="36" y="196" font-size="13" fill="#2dd4bf">Peak Contest Rating: <tspan fill="#f59e0b" font-weight="700">1592</tspan></text>
+  </g>
+
+  <!-- Animated Connector Across Strip -->
+  <path class="ach-draw" d="M24 290 H1176" stroke="#2dd4bf" stroke-opacity=".3" stroke-width="1.2"/>
+
+  <!-- Score Strip (Sushmita Style) -->
+  <g transform="translate(36 308)" class="ach-sans">
+    <g transform="translate(0 0)">
+      <text class="ach-mono" font-size="11" letter-spacing="1.8" fill="#64748b">TOTAL PROBLEMS</text>
+      <text class="ach-serif" y="44" font-size="34" font-weight="300" fill="#2dd4bf">800+</text>
+      <text class="ach-mono" y="66" font-size="10.5" fill="#8ca0b3">LC · CC · CF · GFG</text>
+    </g>
+
+    <g transform="translate(240 0)">
+      <text class="ach-mono" font-size="11" letter-spacing="1.8" fill="#64748b">LEETCODE RATING</text>
+      <text class="ach-serif" y="44" font-size="34" font-weight="300" fill="#f59e0b">1592</text>
+      <text class="ach-mono" y="66" font-size="10.5" fill="#8ca0b3">Contest Peak</text>
+    </g>
+
+    <g transform="translate(480 0)">
+      <text class="ach-mono" font-size="11" letter-spacing="1.8" fill="#64748b">CODECHEF RATING</text>
+      <text class="ach-serif" y="44" font-size="34" font-weight="300" fill="#a855f7">1268</text>
+      <text class="ach-mono" y="66" font-size="10.5" fill="#8ca0b3">Division 4 (1★ Coder)</text>
+    </g>
+
+    <g transform="translate(720 0)">
+      <text class="ach-mono" font-size="11" letter-spacing="1.8" fill="#64748b">CODEFORCES</text>
+      <text class="ach-serif" y="44" font-size="34" font-weight="300" fill="#38bdf8">Active</text>
+      <text class="ach-mono" y="66" font-size="10.5" fill="#8ca0b3">@aryan_1ii</text>
+    </g>
+
+    <g transform="translate(940 0)">
+      <text class="ach-mono" font-size="11" letter-spacing="1.8" fill="#64748b">GEEKSFORGEEKS</text>
+      <text class="ach-serif" y="44" font-size="34" font-weight="300" fill="#10b981">Active</text>
+      <text class="ach-mono" y="66" font-size="10.5" fill="#8ca0b3">@aryanngu56c8</text>
+    </g>
+  </g>
+</svg>

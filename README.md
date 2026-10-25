@@ -1,6 +1,6 @@
 <div align="center">
 
-  <!-- ================= BANNER WITH ASCII FACE & BORDER RAY ================= -->
+  <!-- ================= BANNER WITH SUSHMITA MOVING RAY & EDITORIAL TYPOGRAPHY ================= -->
   <img src="assets/banner.svg" alt="Aryan Gupta Banner" width="100%" />
 
   <br/><br/>
@@ -38,13 +38,14 @@
 
   <!-- ================= QUICK NAVIGATION PILLS ================= -->
   <p align="center">
-    <a href="#about-me"><img src="https://img.shields.io/badge/About_Me-161b22?style=flat-square&logo=visualstudiocode&logoColor=2dd4bf" alt="About" /></a>&nbsp;
-    <a href="#tech-arsenal"><img src="https://img.shields.io/badge/Tech_Arsenal-161b22?style=flat-square&logo=codeforces&logoColor=2dd4bf" alt="Tech" /></a>&nbsp;
-    <a href="#cp-arena"><img src="https://img.shields.io/badge/CP_Arena-161b22?style=flat-square&logo=leetcode&logoColor=2dd4bf" alt="CP" /></a>&nbsp;
-    <a href="#contributions"><img src="https://img.shields.io/badge/Contributions-161b22?style=flat-square&logo=github&logoColor=2dd4bf" alt="Contributions" /></a>&nbsp;
-    <a href="#analytics"><img src="https://img.shields.io/badge/Analytics-161b22?style=flat-square&logo=googleanalytics&logoColor=2dd4bf" alt="Analytics" /></a>&nbsp;
-    <a href="#projects"><img src="https://img.shields.io/badge/Projects-161b22?style=flat-square&logo=git&logoColor=2dd4bf" alt="Projects" /></a>&nbsp;
-    <a href="#coding-vibe"><img src="https://img.shields.io/badge/Philosophy-161b22?style=flat-square&logo=spotify&logoColor=2dd4bf" alt="Philosophy" /></a>
+    <a href="#about"><img src="https://img.shields.io/badge/01_About-161b22?style=flat-square&logo=visualstudiocode&logoColor=2dd4bf" alt="About" /></a>&nbsp;
+    <a href="#recognition"><img src="https://img.shields.io/badge/02_Recognition-161b22?style=flat-square&logo=githubactions&logoColor=2dd4bf" alt="Recognition" /></a>&nbsp;
+    <a href="#toolkit"><img src="https://img.shields.io/badge/03_Toolkit-161b22?style=flat-square&logo=codeforces&logoColor=2dd4bf" alt="Toolkit" /></a>&nbsp;
+    <a href="#cp-arena"><img src="https://img.shields.io/badge/04_CP_Arena-161b22?style=flat-square&logo=leetcode&logoColor=2dd4bf" alt="CP" /></a>&nbsp;
+    <a href="#commits"><img src="https://img.shields.io/badge/05_Commit_Log-161b22?style=flat-square&logo=github&logoColor=2dd4bf" alt="Commit Log" /></a>&nbsp;
+    <a href="#analytics"><img src="https://img.shields.io/badge/06_Analytics-161b22?style=flat-square&logo=googleanalytics&logoColor=2dd4bf" alt="Analytics" /></a>&nbsp;
+    <a href="#work"><img src="https://img.shields.io/badge/07_Projects-161b22?style=flat-square&logo=git&logoColor=2dd4bf" alt="Projects" /></a>&nbsp;
+    <a href="#connect"><img src="https://img.shields.io/badge/08_Philosophy-161b22?style=flat-square&logo=spotify&logoColor=2dd4bf" alt="Philosophy" /></a>
   </p>
 
   <br/>
@@ -56,29 +57,26 @@
 
 <br/><br/>
 
-<!-- ====================================================== -->
-<!--             01 // TERMINAL LOG // ABOUT ME             -->
-<!-- ====================================================== -->
-
-<a name="about-me"></a>
-<img src="assets/section-01-about.svg" width="100%" alt="01 About Me" />
+<!-- Glowing Line with Moving Point Divider -->
+<p align="center">
+  <img src="assets/divider-pulse.svg" width="100%" alt="Divider" />
+</p>
 
 <br/><br/>
 
-<table border="0" align="center" width="100%">
-<tr>
-  <!-- Left Column: Face-Generating ASCII Portrait Terminal (Avi Vashishta Style) -->
-  <td width="46%" valign="top" align="center">
-    <img src="assets/aryan-ascii.svg" width="100%" alt="Aryan Gupta Neural ASCII Portrait" />
-  </td>
+<!-- ====================================================== -->
+<!--                      01 // ABOUT                       -->
+<!-- ====================================================== -->
 
-  <!-- Right Column: Terminal Log -->
-  <td width="54%" valign="top">
+<a name="about"></a>
+<img src="assets/title-about.svg" width="100%" alt="01 About: Hello, I'm Aryan." />
+
+<br/><br/>
 
 ```yaml
 identity:
   name: Aryan Gupta
-  role: B.Tech Computer Science Student & Software Developer
+  role: B.Tech Computer Science Student & Backend Engineer
   location: Bengaluru, India 🇮🇳
   institution: PW Institute of Innovation (Medhavi Skills University)
   graduation: 2025 - 2029 (Currently Semester 3)
@@ -87,7 +85,7 @@ interests & focus:
   - Data Structures & Algorithms
   - Backend Engineering & Database Architecture
   - Competitive Programming
-  - Artificial Intelligence & Machine Learning
+  - Distributed Systems & Scalability
 
 achievements:
   - total_problems_solved: 800+ unique problems across LC, GFG, CC, CF
@@ -97,63 +95,94 @@ achievements:
   - icpc_india_preliminary_2026: Tentative Rank 1168
 
 current_focus:
-  - Spring Boot & Relational Entity Architecture
-  - Advanced Graph Theory & Dynamic Programming optimizations
+  - Advanced Spring Boot & Relational Entity Architecture
+  - Asymptotic Graph Theory & Dynamic Programming optimizations
 
 availability:
   status: Open to Software Engineering Internships & Technical Collaborations 🚀
 ```
 
-  </td>
-</tr>
-</table>
-
 <br/>
 
 <!-- Core Engineering Values Matrix -->
-<table width="100%" cellpadding="10" cellspacing="6">
+<table width="100%" cellpadding="12" cellspacing="8">
   <tr>
-    <td width="33%" align="center" style="background: #0d1117; border: 1.2px solid #1a2e3d; border-radius: 10px;">
-      <font color="#2dd4bf"><b>🎯 Problem-First Mindset</b></font><br/>
+    <td width="33%" align="center" style="background: #0d1117; border: 1.5px solid #1a2e3d; border-radius: 12px;">
+      <font size="3" color="#2dd4bf"><b>🎯 Problem-First Mindset</b></font><br/>
       <sub><i>Analyze asymptotic space &amp; time bounds before writing line 1.</i></sub>
     </td>
-    <td width="33%" align="center" style="background: #0d1117; border: 1.2px solid #1a2e3d; border-radius: 10px;">
-      <font color="#2dd4bf"><b>⚡ Database Architecture</b></font><br/>
+    <td width="33%" align="center" style="background: #0d1117; border: 1.5px solid #1a2e3d; border-radius: 12px;">
+      <font size="3" color="#2dd4bf"><b>⚡ Database Architecture</b></font><br/>
       <sub><i>Strict relational integrity, connection pooling &amp; clean ORM cascades.</i></sub>
     </td>
-    <td width="33%" align="center" style="background: #0d1117; border: 1.2px solid #1a2e3d; border-radius: 10px;">
-      <font color="#2dd4bf"><b>🔥 Relentless Consistency</b></font><br/>
+    <td width="33%" align="center" style="background: #0d1117; border: 1.5px solid #1a2e3d; border-radius: 12px;">
+      <font size="3" color="#2dd4bf"><b>🔥 Relentless Consistency</b></font><br/>
       <sub><i>300+ days continuous daily streak across competitive platforms.</i></sub>
     </td>
   </tr>
 </table>
 
-<br/><br/><br/>
+<br/><br/>
+
+<!-- Glowing Line with Moving Point Divider -->
+<p align="center">
+  <img src="assets/divider-pulse.svg" width="100%" alt="Divider" />
+</p>
+
+<br/><br/>
 
 <!-- ====================================================== -->
-<!--                   02 // TECH ARSENAL                   -->
+<!--                   02 // RECOGNITION                    -->
 <!-- ====================================================== -->
 
-<a name="tech-arsenal"></a>
-<img src="assets/section-02-tech.svg" width="100%" alt="02 Tech Arsenal" />
+<a name="recognition"></a>
+<img src="assets/title-recognition.svg" width="100%" alt="02 Recognition: Proof, on the record." />
+
+<br/><br/>
+
+<!-- Sushmita-Style Recognition Card with Outlined Watermarks, Moving Border Rays & Score Strip -->
+<img src="assets/recognition-card.svg" width="100%" alt="Recognition: ICPC India Preliminary Rank 1168, 300+ Days LeetCode Streak, 800+ Problems Solved." />
+
+<br/><br/>
+
+<!-- Glowing Line with Moving Point Divider -->
+<p align="center">
+  <img src="assets/divider-pulse.svg" width="100%" alt="Divider" />
+</p>
+
+<br/><br/>
+
+<!-- ====================================================== -->
+<!--                    03 // TOOLKIT                       -->
+<!-- ====================================================== -->
+
+<a name="toolkit"></a>
+<img src="assets/title-toolkit.svg" width="100%" alt="03 Toolkit: The tools I reach for." />
 
 <div align="center">
 
   <br/><br/>
 
-  <!-- Smooth Infinite Moving Marquee with Glowing Border Ray -->
+  <!-- Infinite Moving Tech Arsenal with Sushmita Glowing Border Ray -->
   <img src="assets/tech-stack.svg" alt="Animated Moving Tech Arsenal" width="100%" />
 
 </div>
 
-<br/><br/><br/>
+<br/><br/>
+
+<!-- Glowing Line with Moving Point Divider -->
+<p align="center">
+  <img src="assets/divider-pulse.svg" width="100%" alt="Divider" />
+</p>
+
+<br/><br/>
 
 <!-- ====================================================== -->
-<!--             03 // COMPETITIVE PROGRAMMING ARENA        -->
+<!--                   04 // CP ARENA                       -->
 <!-- ====================================================== -->
 
 <a name="cp-arena"></a>
-<img src="assets/section-03-cp.svg" width="100%" alt="03 Competitive Programming Arena" />
+<img src="assets/title-cp.svg" width="100%" alt="04 CP Arena: Competitive Programming." />
 
 <div align="center">
 
@@ -201,7 +230,7 @@ availability:
 
   <br/><br/>
 
-  <!-- 2x2 Profile Cards Grid: Row 1 = LeetCode + CodeChef (with Border Ray) | Row 2 = Codeforces + GeeksforGeeks -->
+  <!-- 2x2 Profile Cards Grid: Row 1 = LeetCode + CodeChef (with Moving Border Ray) | Row 2 = Codeforces + GeeksforGeeks -->
   <table border="0" align="center" cellpadding="8" cellspacing="8">
     <tr>
       <td align="center" valign="middle">
@@ -211,7 +240,7 @@ availability:
       </td>
       <td align="center" valign="middle">
         <a href="https://www.codechef.com/users/aryan_1ii" target="_blank">
-          <img src="assets/codechef-card.svg" alt="CodeChef Card" width="460" />
+          <img src="assets/codechef-card.svg" alt="CodeChef Card with Moving Border Ray" width="460" />
         </a>
       </td>
     </tr>
@@ -229,39 +258,48 @@ availability:
     </tr>
   </table>
 
-  <br/><br/>
-
-  <!-- ICPC Honor -->
-  <img src="https://img.shields.io/badge/🏆_ICPC_India_Preliminary_Online_Contest_2026-Rank_1168-14b8a6?style=for-the-badge" />
-
 </div>
 
-<br/><br/><br/>
+<br/><br/>
+
+<!-- Glowing Line with Moving Point Divider -->
+<p align="center">
+  <img src="assets/divider-pulse.svg" width="100%" alt="Divider" />
+</p>
+
+<br/><br/>
 
 <!-- ====================================================== -->
-<!--             04 // CONTRIBUTION JOURNEY                 -->
+<!--                  05 // COMMIT LOG                      -->
 <!-- ====================================================== -->
 
-<a name="contributions"></a>
-<img src="assets/section-04-contributions.svg" width="100%" alt="04 Contribution Journey" />
+<a name="commits"></a>
+<img src="assets/title-commits.svg" width="100%" alt="05 Commit Log: A year of continuous building." />
 
 <div align="center">
 
   <br/><br/>
 
-  <!-- Real GitHub Contribution Snake with Sushmita Serpentine Motion & Glowing Border Ray -->
+  <!-- Real GitHub Contribution Snake with Sushmita Serpentine Motion & Moving Border Ray -->
   <img src="assets/contribution-snake.svg" alt="GitHub Contribution Snake Animation" width="100%" />
 
 </div>
 
-<br/><br/><br/>
+<br/><br/>
+
+<!-- Glowing Line with Moving Point Divider -->
+<p align="center">
+  <img src="assets/divider-pulse.svg" width="100%" alt="Divider" />
+</p>
+
+<br/><br/>
 
 <!-- ====================================================== -->
-<!--                   05 // GITHUB ANALYTICS               -->
+<!--                   06 // ANALYTICS                      -->
 <!-- ====================================================== -->
 
 <a name="analytics"></a>
-<img src="assets/section-05-analytics.svg" width="100%" alt="05 GitHub Analytics" />
+<img src="assets/title-analytics.svg" width="100%" alt="06 Analytics: Metrics, streaks & languages." />
 
 <div align="center">
 
@@ -279,22 +317,29 @@ availability:
 
 </div>
 
-<br/><br/><br/>
+<br/><br/>
+
+<!-- Glowing Line with Moving Point Divider -->
+<p align="center">
+  <img src="assets/divider-pulse.svg" width="100%" alt="Divider" />
+</p>
+
+<br/><br/>
 
 <!-- ====================================================== -->
-<!--                   06 // FEATURED PROJECTS              -->
+<!--                07 // SELECTED WORK                     -->
 <!-- ====================================================== -->
 
-<a name="projects"></a>
-<img src="assets/section-06-projects.svg" width="100%" alt="06 Featured Projects" />
+<a name="work"></a>
+<img src="assets/title-work.svg" width="100%" alt="07 Selected Work: Products, not assignments." />
 
 <div align="center">
 
 <br/><br/>
 
-<table width="100%" cellpadding="10" cellspacing="10">
+<table width="100%" cellpadding="12" cellspacing="12">
 <tr>
-  <td width="50%" valign="top" style="background: #0d1117; border: 1.2px solid #1a2e3d; border-radius: 12px;">
+  <td width="50%" valign="top" style="background: #0a121c; border: 1.5px solid #1a2e3d; border-radius: 14px;">
     <h3 align="center">🧬 CodeDNA</h3>
     <p align="center">
       <a href="https://github.com/Aryan1i/CodeDNA" target="_blank">
@@ -311,7 +356,7 @@ availability:
       <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
     </p>
   </td>
-  <td width="50%" valign="top" style="background: #0d1117; border: 1.2px solid #1a2e3d; border-radius: 12px;">
+  <td width="50%" valign="top" style="background: #0a121c; border: 1.5px solid #1a2e3d; border-radius: 14px;">
     <h3 align="center">🗄️ JDBC CRUD Project</h3>
     <p align="center">
       <a href="https://github.com/Aryan1i/springboot/tree/main/JDBC-CRUD-Project/src" target="_blank">
@@ -330,7 +375,7 @@ availability:
   </td>
 </tr>
 <tr>
-  <td width="50%" valign="top" style="background: #0d1117; border: 1.2px solid #1a2e3d; border-radius: 12px;">
+  <td width="50%" valign="top" style="background: #0a121c; border: 1.5px solid #1a2e3d; border-radius: 14px;">
     <h3 align="center">🔗 Hibernate &amp; JPA Projects</h3>
     <p align="center">
       <a href="https://github.com/Aryan1i/springboot/tree/main/JDBC-Learning/src" target="_blank">
@@ -347,7 +392,7 @@ availability:
       <img src="https://img.shields.io/badge/JPA-6DB33F?style=flat-square&logo=spring&logoColor=white" />
     </p>
   </td>
-  <td width="50%" valign="top" style="background: #0d1117; border: 1.2px solid #1a2e3d; border-radius: 12px;">
+  <td width="50%" valign="top" style="background: #0a121c; border: 1.5px solid #1a2e3d; border-radius: 14px;">
     <h3 align="center">🧩 DSA Problem-Solving Hub</h3>
     <p align="center">
       <a href="https://github.com/Aryan1i/DSA" target="_blank">
@@ -369,14 +414,21 @@ availability:
 
 </div>
 
-<br/><br/><br/>
+<br/><br/>
+
+<!-- Glowing Line with Moving Point Divider -->
+<p align="center">
+  <img src="assets/divider-pulse.svg" width="100%" alt="Divider" />
+</p>
+
+<br/><br/>
 
 <!-- ====================================================== -->
-<!--                   07 // CODING VIBE                    -->
+<!--                    08 // CONNECT                       -->
 <!-- ====================================================== -->
 
-<a name="coding-vibe"></a>
-<img src="assets/section-07-vibe.svg" width="100%" alt="07 Coding Vibe" />
+<a name="connect"></a>
+<img src="assets/title-connect.svg" width="100%" alt="08 Connect: Discipline versus obsession." />
 
 <div align="center">
 
@@ -389,16 +441,8 @@ availability:
 
   <br/><br/>
 
-  <!-- User's Philosophy Quote -->
-  <table border="0" align="center">
-    <tr>
-      <td align="center" style="padding: 18px 36px; background: #0d1117; border-radius: 12px; border: 1.5px solid #2dd4bf;">
-        <font size="4" color="#2dd4bf">
-          <i>“If you're disciplined, you still can't beat someone who's obsessed.”</i>
-        </font>
-      </td>
-    </tr>
-  </table>
+  <!-- Sushmita-Style Philosophy Signature Card with Moving Border Ray & Editorial Typography -->
+  <img src="assets/philosophy-card.svg" width="100%" alt="Philosophy: If you're disciplined, you still can't beat someone who's obsessed." />
 
   <br/><br/>
 

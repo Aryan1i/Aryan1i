@@ -8,13 +8,41 @@
     <stop offset="100%" stop-color="#07131d"/>
   </linearGradient>
 
-  <!-- Cyan/Teal Moving Ray Gradient -->
+  <!-- Cyan/Teal Moving Ray Gradient (Sushmita Style) -->
   <linearGradient id="bannerRay" x1="0" y1="0" x2="1" y2="1">
     <stop offset="0%" stop-color="#ffffff"/>
     <stop offset="35%" stop-color="#5eead4"/>
     <stop offset="70%" stop-color="#2dd4bf"/>
     <stop offset="100%" stop-color="#0f766e" stop-opacity="0"/>
   </linearGradient>
+
+  <!-- Sheen on Main Name (Sushmita Style) -->
+  <linearGradient id="titleSheen" x1="-300" y1="0" x2="0" y2="0" gradientUnits="userSpaceOnUse">
+    <stop offset="0%" stop-color="#ffffff"/>
+    <stop offset="50%" stop-color="#5eead4"/>
+    <stop offset="100%" stop-color="#ffffff"/>
+    <animateTransform attributeName="gradientTransform" type="translate" values="0 0; 1500 0; 1500 0" keyTimes="0; .45; 1" dur="7s" begin="1s" repeatCount="indefinite"/>
+  </linearGradient>
+
+  <!-- Node Glow -->
+  <filter id="nodeGlow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="4" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+
+  <!-- Energy Pulse Glow -->
+  <filter id="signalGlow" x="-100%" y="-100%" width="300%" height="300%">
+    <feGaussianBlur stdDeviation="6" result="blur1"/>
+    <feGaussianBlur stdDeviation="3" result="blur2"/>
+    <feMerge>
+      <feMergeNode in="blur1"/>
+      <feMergeNode in="blur2"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
 
   <!-- Tech Grid Overlay -->
   <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
@@ -29,44 +57,55 @@
     <stop offset="100%" stop-color="#2dd4bf" stop-opacity="0"/>
   </linearGradient>
 
+  <!-- Circuit Line Gradient -->
+  <linearGradient id="circuitGrad" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#143447"/>
+    <stop offset="50%" stop-color="#2dd4bf" stop-opacity="0.8"/>
+    <stop offset="100%" stop-color="#143447"/>
+  </linearGradient>
+
   <clipPath id="innerScreen">
     <rect x="36" y="24" width="1128" height="332" rx="18"/>
   </clipPath>
 </defs>
 
-<!-- Outer Background Canvas -->
+<style>
+  .s-serif { font-family: Georgia, "Iowan Old Style", "Palatino Linotype", "Times New Roman", serif; }
+  .s-mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
+  .s-sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+</style>
+
+<!-- Outer Canvas -->
 <rect width="1200" height="380" fill="#020408"/>
 
 <!-- Main Terminal Window Frame -->
 <rect x="36" y="24" width="1128" height="332" rx="18" fill="url(#bg)" stroke="#1a2e3d" stroke-width="1.6"/>
-
-<!-- Subtle Tech Grid Background -->
 <rect x="36" y="24" width="1128" height="332" rx="18" fill="url(#grid)" clip-path="url(#innerScreen)"/>
 
 <!-- ================= SUSHMITA-STYLE MOVING RAY ON BORDER ================= -->
 <!-- Perimeter = 2 * (1128 + 332) = 2920 -->
 <rect x="36" y="24" width="1128" height="332" rx="18" fill="none" 
-      stroke="url(#bannerRay)" stroke-width="2.2" stroke-linecap="round"
-      stroke-dasharray="450 2470">
+      stroke="url(#bannerRay)" stroke-width="2.4" stroke-linecap="round"
+      stroke-dasharray="480 2440">
   <animate attributeName="stroke-dashoffset" values="2920;0" dur="6.5s" repeatCount="indefinite"/>
 </rect>
 
-<!-- ================= TOP WINDOW CONTROLS ================= -->
+<!-- ================= TOP CONTROLS & HEADER ================= -->
 <circle cx="68" cy="54" r="6" fill="#ff5f56"/>
 <circle cx="90" cy="54" r="6" fill="#ffbd2e"/>
 <circle cx="112" cy="54" r="6" fill="#27c93f"/>
 
-<text x="144" y="58" fill="#5eead4" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="12" font-weight="600" letter-spacing="1.5">
+<text class="s-mono" x="144" y="58" fill="#5eead4" font-size="12" font-weight="600" letter-spacing="1.8">
   ARYAN.DEV // PW INSTITUTE OF INNOVATION // B.TECH CSE
 </text>
 
-<g transform="translate(1000, 46)">
+<g transform="translate(995, 46)">
   <!-- Pulsating Live Dot -->
   <circle cx="0" cy="8" r="4.5" fill="#2dd4bf">
     <animate attributeName="r" values="4;6.5;4" dur="2s" repeatCount="indefinite"/>
     <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/>
   </circle>
-  <text x="15" y="12" fill="#2dd4bf" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="700" letter-spacing="1">
+  <text class="s-mono" x="15" y="12" fill="#2dd4bf" font-size="11.5" font-weight="700" letter-spacing="1.2">
     STREAK: 300D+ 🔥
   </text>
 </g>
@@ -75,126 +114,85 @@
 <line x1="36" y1="76" x2="1164" y2="76" stroke="#162736" stroke-width="1.2"/>
 
 <!-- ================= LEFT IDENTITY COLUMN ================= -->
-<rect x="72" y="102" width="138" height="22" rx="4" fill="#0d2b2c" stroke="#14b8a6" stroke-width="0.8"/>
-<text x="82" y="117" fill="#2dd4bf" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700" letter-spacing="1">
-  ⚡ SOFTWARE &amp; DSA
+<rect x="72" y="100" width="146" height="22" rx="4" fill="#0d2b2c" stroke="#14b8a6" stroke-width="0.8"/>
+<text class="s-mono" x="82" y="115" fill="#2dd4bf" font-size="10.5" font-weight="700" letter-spacing="1.5">
+  01 // SOFTWARE &amp; DSA
 </text>
 
-<!-- Main Name Heading -->
-<text x="70" y="165" fill="#ffffff" font-family="'Segoe UI', -apple-system, 'JetBrains Mono', monospace" font-size="42" font-weight="800" letter-spacing="-0.5">
-  ARYAN GUPTA
+<!-- Main Name Heading with Editorial Serif & Italic Sheen (Sushmita Style) -->
+<text class="s-serif" x="70" y="166" font-size="48" font-weight="300" letter-spacing="-1" fill="#f0f6fc">
+  Aryan <tspan font-style="italic" fill="url(#titleSheen)">Gupta.</tspan>
 </text>
 
 <!-- Subtitle / Passion -->
-<text x="72" y="194" fill="#5eead4" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="14.5" font-weight="500">
+<text class="s-mono" x="72" y="194" fill="#5eead4" font-size="13" letter-spacing="1">
   algorithms · systems engineering · backend development
 </text>
 
 <!-- Blinking Cursor -->
-<rect x="575" y="180" width="8" height="16" fill="#2dd4bf">
+<rect x="530" y="181" width="8" height="15" fill="#2dd4bf">
   <animate attributeName="opacity" values="1;0;1" dur="0.9s" repeatCount="indefinite"/>
 </rect>
 
-<!-- Status text -->
-<text x="72" y="224" fill="#8ca0b3" font-family="'JetBrains Mono', monospace" font-size="12">
-  <tspan fill="#38bdf8">🎓 Education:</tspan> B.Tech in Computer Science · Semester 3
-  <tspan fill="#64748b"> | </tspan>
-  <tspan fill="#2dd4bf">PW Institute of Innovation</tspan>
+<!-- Education & Status line -->
+<text class="s-sans" x="72" y="224" fill="#8ca0b3" font-size="13">
+  <tspan fill="#38bdf8" font-weight="600">Education:</tspan> B.Tech in Computer Science · Semester 3
+  <tspan fill="#64748b">  |  </tspan>
+  <tspan fill="#2dd4bf" font-weight="600">PW Institute of Innovation</tspan>
 </text>
 
-<!-- ================= RIGHT SIDE: EMBEDDED ASCII FACE TERMINAL ================= -->
-<!-- Terminal Sub-window Frame -->
-<rect x="720" y="88" width="408" height="152" rx="10" fill="#060c14" stroke="#1a2e3d" stroke-width="1.2"/>
-<!-- Ray on terminal sub-window -->
-<rect x="720" y="88" width="408" height="152" rx="10" fill="none"
-      stroke="url(#bannerRay)" stroke-width="1.4" stroke-linecap="round"
-      stroke-dasharray="160 960">
-  <animate attributeName="stroke-dashoffset" values="1120;0" dur="4.8s" repeatCount="indefinite"/>
-</rect>
-
-<!-- Terminal Header Bar -->
-<rect x="720" y="88" width="408" height="22" rx="10" fill="#0a1420"/>
-<line x1="720" y1="110" x2="1128" y2="110" stroke="#162736" stroke-width="1"/>
-<circle cx="734" cy="99" r="3.5" fill="#ff5f56"/>
-<circle cx="746" cy="99" r="3.5" fill="#ffbd2e"/>
-<circle cx="758" cy="99" r="3.5" fill="#27c93f"/>
-<text x="774" y="103" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600">
-  aryan@dev: ~$ ./face-detect.sh
+<!-- ================= RIGHT SIDE: TECH CIRCUIT DIAGRAM ================= -->
+<text class="s-mono" x="710" y="106" fill="#5eead4" font-size="11" font-weight="700" letter-spacing="2">
+  // ARCHITECTURE &amp; SYSTEMS
 </text>
 
-<!-- Animated ASCII Rows -->
-<clipPath id="bt0"><rect x="732" y="112.0" height="5.0" width="0"><animate attributeName="width" from="0" to="384" begin="0.00s" dur="0.20s" fill="freeze"/></rect></clipPath>
-<g clip-path="url(#bt0)"><text xml:space="preserve" x="732" y="115.8" fill="#2dd4bf" font-family="'JetBrains Mono', monospace" font-size="4.4" textLength="384" lengthAdjust="spacing">                  ccccccccccccccc**************                 </text></g>
-<rect y="112.0" width="5" height="5.0" fill="#5eead4" opacity="0"><animate attributeName="x" from="732" to="1116" begin="0.00s" dur="0.20s" fill="freeze"/><set attributeName="opacity" to="0.9" begin="0.00s"/><set attributeName="opacity" to="0" begin="0.20s"/></rect>
-<clipPath id="bt1"><rect x="732" y="117.0" height="5.0" width="0"><animate attributeName="width" from="0" to="384" begin="0.20s" dur="0.20s" fill="freeze"/></rect></clipPath>
-<g clip-path="url(#bt1)"><text xml:space="preserve" x="732" y="120.8" fill="#2dd4bf" font-family="'JetBrains Mono', monospace" font-size="4.4" textLength="384" lengthAdjust="spacing">                  cccccccccccccccccccccccc****c                 </text></g>
-<rect y="117.0" width="5" height="5.0" fill="#5eead4" opacity="0"><animate attributeName="x" from="732" to="1116" begin="0.20s" dur="0.20s" fill="freeze"/><set attributeName="opacity" to="0.9" begin="0.20s"/><set attributeName="opacity" to="0" begin="0.40s"/></rect>
-<clipPath id="bt2"><rect x="732" y="122.0" height="5.0" width="0"><animate attributeName="width" from="0" to="384" begin="0.40s" dur="0.20s" fill="freeze"/></rect></clipPath>
-<g clip-path="url(#bt2)"><text xml:space="preserve" x="732" y="125.8" fill="#2dd4bf" font-family="'JetBrains Mono', monospace" font-size="4.4" textLength="384" lengthAdjust="spacing">                  cccccc##ss%%#######%%%%###scc                 </text></g>
-<rect y="122.0" width="5" height="5.0" fill="#5eead4" opacity="0"><animate attributeName="x" from="732" to="1116" begin="0.40s" dur="0.20s" fill="freeze"/><set attributeName="opacity" to="0.9" begin="0.40s"/><set attributeName="opacity" to="0" begin="0.60s"/></rect>
-<clipPath id="bt3"><rect x="732" y="127.0" height="5.0" width="0"><animate attributeName="width" from="0" to="384" begin="0.60s" dur="0.20s" fill="freeze"/></rect></clipPath>
-<g clip-path="url(#bt3)"><text xml:space="preserve" x="732" y="130.8" fill="#2dd4bf" font-family="'JetBrains Mono', monospace" font-size="4.4" textLength="384" lengthAdjust="spacing">                  *cccccs##%%%%%%%%%%#%%%%%%%%%#s               </text></g>
-<rect y="127.0" width="5" height="5.0" fill="#5eead4" opacity="0"><animate attributeName="x" from="732" to="1116" begin="0.60s" dur="0.20s" fill="freeze"/><set attributeName="opacity" to="0.9" begin="0.60s"/><set attributeName="opacity" to="0" begin="0.80s"/></rect>
-<clipPath id="bt4"><rect x="732" y="132.0" height="5.0" width="0"><animate attributeName="width" from="0" to="384" begin="0.80s" dur="0.20s" fill="freeze"/></rect></clipPath>
-<g clip-path="url(#bt4)"><text xml:space="preserve" x="732" y="135.8" fill="#2dd4bf" font-family="'JetBrains Mono', monospace" font-size="4.4" textLength="384" lengthAdjust="spacing">                  ccccccs######ss####%%%%%%%%%%%%%#s            </text></g>
-<rect y="132.0" width="5" height="5.0" fill="#5eead4" opacity="0"><animate attributeName="x" from="732" to="1116" begin="0.80s" dur="0.20s" fill="freeze"/><set attributeName="opacity" to="0.9" begin="0.80s"/><set attributeName="opacity" to="0" begin="1.00s"/></rect>
-<clipPath id="bt5"><rect x="732" y="137.0" height="5.0" width="0"><animate attributeName="width" from="0" to="384" begin="1.00s" dur="0.20s" fill="freeze"/></rect></clipPath>
-<g clip-path="url(#bt5)"><text xml:space="preserve" x="732" y="140.8" fill="#2dd4bf" font-family="'JetBrains Mono', monospace" font-size="4.4" textLength="384" lengthAdjust="spacing">                  ccccccs%%%#c******ccss##%%%%%%%%%%#     sss   </text></g>
-<rect y="137.0" width="5" height="5.0" fill="#5eead4" opacity="0"><animate attributeName="x" from="732" to="1116" begin="1.00s" dur="0.20s" fill="freeze"/><set attributeName="opacity" to="0.9" begin="1.00s"/><set attributeName="opacity" to="0" begin="1.20s"/></rect>
-<clipPath id="bt6"><rect x="732" y="142.0" height="5.0" width="0"><animate attributeName="width" from="0" to="384" begin="1.20s" dur="0.20s" fill="freeze"/></rect></clipPath>
-<g clip-path="url(#bt6)"><text xml:space="preserve" x="732" y="145.8" fill="#2dd4bf" font-family="'JetBrains Mono', monospace" font-size="4.4" textLength="384" lengthAdjust="spacing">                  ccccccs%%s**c*csccc****ccs##%%%%%%#s  ssssssss</text></g>
-<rect y="142.0" width="5" height="5.0" fill="#5eead4" opacity="0"><animate attributeName="x" from="732" to="1116" begin="1.20s" dur="0.20s" fill="freeze"/><set attributeName="opacity" to="0.9" begin="1.20s"/><set attributeName="opacity" to="0" begin="1.40s"/></rect>
-<clipPath id="bt7"><rect x="732" y="147.0" height="5.0" width="0"><animate attributeName="width" from="0" to="384" begin="1.40s" dur="0.20s" fill="freeze"/></rect></clipPath>
-<g clip-path="url(#bt7)"><text xml:space="preserve" x="732" y="150.8" fill="#2dd4bf" font-family="'JetBrains Mono', monospace" font-size="4.4" textLength="384" lengthAdjust="spacing">                  ccccc**cs+*css#####ssss#######%%##ssssssssssss</text></g>
-<rect y="147.0" width="5" height="5.0" fill="#5eead4" opacity="0"><animate attributeName="x" from="732" to="1116" begin="1.40s" dur="0.20s" fill="freeze"/><set attributeName="opacity" to="0.9" begin="1.40s"/><set attributeName="opacity" to="0" begin="1.60s"/></rect>
-<clipPath id="bt8"><rect x="732" y="152.0" height="5.0" width="0"><animate attributeName="width" from="0" to="384" begin="1.60s" dur="0.20s" fill="freeze"/></rect></clipPath>
-<g clip-path="url(#bt8)"><text xml:space="preserve" x="732" y="155.8" fill="#2dd4bf" font-family="'JetBrains Mono', monospace" font-size="4.4" textLength="384" lengthAdjust="spacing">                  ccsc++***====+*****=+s#s##s###########ssssssss</text></g>
-<rect y="152.0" width="5" height="5.0" fill="#5eead4" opacity="0"><animate attributeName="x" from="732" to="1116" begin="1.60s" dur="0.20s" fill="freeze"/><set attributeName="opacity" to="0.9" begin="1.60s"/><set attributeName="opacity" to="0" begin="1.80s"/></rect>
-<clipPath id="bt9"><rect x="732" y="157.0" height="5.0" width="0"><animate attributeName="width" from="0" to="384" begin="1.80s" dur="0.20s" fill="freeze"/></rect></clipPath>
-<g clip-path="url(#bt9)"><text xml:space="preserve" x="732" y="160.8" fill="#2dd4bf" font-family="'JetBrains Mono', monospace" font-size="4.4" textLength="384" lengthAdjust="spacing">                  ssssc+*ssc**+++++*==csc***ccs###########ssssss</text></g>
-<rect y="157.0" width="5" height="5.0" fill="#5eead4" opacity="0"><animate attributeName="x" from="732" to="1116" begin="1.80s" dur="0.20s" fill="freeze"/><set attributeName="opacity" to="0.9" begin="1.80s"/><set attributeName="opacity" to="0" begin="2.00s"/></rect>
-<clipPath id="bt10"><rect x="732" y="162.0" height="5.0" width="0"><animate attributeName="width" from="0" to="384" begin="2.00s" dur="0.20s" fill="freeze"/></rect></clipPath>
-<g clip-path="url(#bt10)"><text xml:space="preserve" x="732" y="165.8" fill="#2dd4bf" font-family="'JetBrains Mono', monospace" font-size="4.4" textLength="384" lengthAdjust="spacing">                  sssssss##scccssccs###sc*ccs##############sssss</text></g>
-<rect y="162.0" width="5" height="5.0" fill="#5eead4" opacity="0"><animate attributeName="x" from="732" to="1116" begin="2.00s" dur="0.20s" fill="freeze"/><set attributeName="opacity" to="0.9" begin="2.00s"/><set attributeName="opacity" to="0" begin="2.20s"/></rect>
-<clipPath id="bt11"><rect x="732" y="167.0" height="5.0" width="0"><animate attributeName="width" from="0" to="384" begin="2.20s" dur="0.20s" fill="freeze"/></rect></clipPath>
-<g clip-path="url(#bt11)"><text xml:space="preserve" x="732" y="170.8" fill="#2dd4bf" font-family="'JetBrains Mono', monospace" font-size="4.4" textLength="384" lengthAdjust="spacing">                ssssssss####sccccccsssss#s##################ssss</text></g>
-<rect y="167.0" width="5" height="5.0" fill="#5eead4" opacity="0"><animate attributeName="x" from="732" to="1116" begin="2.20s" dur="0.20s" fill="freeze"/><set attributeName="opacity" to="0.9" begin="2.20s"/><set attributeName="opacity" to="0" begin="2.40s"/></rect>
-<clipPath id="bt12"><rect x="732" y="172.0" height="5.0" width="0"><animate attributeName="width" from="0" to="384" begin="2.40s" dur="0.20s" fill="freeze"/></rect></clipPath>
-<g clip-path="url(#bt12)"><text xml:space="preserve" x="732" y="175.8" fill="#2dd4bf" font-family="'JetBrains Mono', monospace" font-size="4.4" textLength="384" lengthAdjust="spacing">            ss ssssssss%@%css#ssscccssss##%##################sss</text></g>
-<rect y="172.0" width="5" height="5.0" fill="#5eead4" opacity="0"><animate attributeName="x" from="732" to="1116" begin="2.40s" dur="0.20s" fill="freeze"/><set attributeName="opacity" to="0.9" begin="2.40s"/><set attributeName="opacity" to="0" begin="2.60s"/></rect>
-<clipPath id="bt13"><rect x="732" y="177.0" height="5.0" width="0"><animate attributeName="width" from="0" to="384" begin="2.60s" dur="0.20s" fill="freeze"/></rect></clipPath>
-<g clip-path="url(#bt13)"><text xml:space="preserve" x="732" y="180.8" fill="#2dd4bf" font-family="'JetBrains Mono', monospace" font-size="4.4" textLength="384" lengthAdjust="spacing">           ssssss sssc#@%ccccs###%%%%%%%%%####################ss</text></g>
-<rect y="177.0" width="5" height="5.0" fill="#5eead4" opacity="0"><animate attributeName="x" from="732" to="1116" begin="2.60s" dur="0.20s" fill="freeze"/><set attributeName="opacity" to="0.9" begin="2.60s"/><set attributeName="opacity" to="0" begin="2.80s"/></rect>
-<clipPath id="bt14"><rect x="732" y="182.0" height="5.0" width="0"><animate attributeName="width" from="0" to="384" begin="2.80s" dur="0.20s" fill="freeze"/></rect></clipPath>
-<g clip-path="url(#bt14)"><text xml:space="preserve" x="732" y="185.8" fill="#2dd4bf" font-family="'JetBrains Mono', monospace" font-size="4.4" textLength="384" lengthAdjust="spacing">    ssssss        *ccs%%cccccssss#######%%###%#################s</text></g>
-<rect y="182.0" width="5" height="5.0" fill="#5eead4" opacity="0"><animate attributeName="x" from="732" to="1116" begin="2.80s" dur="0.20s" fill="freeze"/><set attributeName="opacity" to="0.9" begin="2.80s"/><set attributeName="opacity" to="0" begin="3.00s"/></rect>
-<clipPath id="bt15"><rect x="732" y="187.0" height="5.0" width="0"><animate attributeName="width" from="0" to="384" begin="3.00s" dur="0.20s" fill="freeze"/></rect></clipPath>
-<g clip-path="url(#bt15)"><text xml:space="preserve" x="732" y="190.8" fill="#2dd4bf" font-family="'JetBrains Mono', monospace" font-size="4.4" textLength="384" lengthAdjust="spacing">               ss *c%%%#sccsscss########%@%%%###################</text></g>
-<rect y="187.0" width="5" height="5.0" fill="#5eead4" opacity="0"><animate attributeName="x" from="732" to="1116" begin="3.00s" dur="0.20s" fill="freeze"/><set attributeName="opacity" to="0.9" begin="3.00s"/><set attributeName="opacity" to="0" begin="3.20s"/></rect>
-<clipPath id="bt16"><rect x="732" y="192.0" height="5.0" width="0"><animate attributeName="width" from="0" to="384" begin="3.20s" dur="0.20s" fill="freeze"/></rect></clipPath>
-<g clip-path="url(#bt16)"><text xml:space="preserve" x="732" y="195.8" fill="#2dd4bf" font-family="'JetBrains Mono', monospace" font-size="4.4" textLength="384" lengthAdjust="spacing">c********cccs###sss#%%%#cc***ccccccssss#%%%%%###################</text></g>
-<rect y="192.0" width="5" height="5.0" fill="#5eead4" opacity="0"><animate attributeName="x" from="732" to="1116" begin="3.20s" dur="0.20s" fill="freeze"/><set attributeName="opacity" to="0.9" begin="3.20s"/><set attributeName="opacity" to="0" begin="3.40s"/></rect>
-<clipPath id="bt17"><rect x="732" y="197.0" height="5.0" width="0"><animate attributeName="width" from="0" to="384" begin="3.40s" dur="0.20s" fill="freeze"/></rect></clipPath>
-<g clip-path="url(#bt17)"><text xml:space="preserve" x="732" y="200.8" fill="#2dd4bf" font-family="'JetBrains Mono', monospace" font-size="4.4" textLength="384" lengthAdjust="spacing">ccccccccsss####ssss#%%%#***********ccc#%%%%%%%%%################</text></g>
-<rect y="197.0" width="5" height="5.0" fill="#5eead4" opacity="0"><animate attributeName="x" from="732" to="1116" begin="3.40s" dur="0.20s" fill="freeze"/><set attributeName="opacity" to="0.9" begin="3.40s"/><set attributeName="opacity" to="0" begin="3.60s"/></rect>
-<clipPath id="bt18"><rect x="732" y="202.0" height="5.0" width="0"><animate attributeName="width" from="0" to="384" begin="3.60s" dur="0.20s" fill="freeze"/></rect></clipPath>
-<g clip-path="url(#bt18)"><text xml:space="preserve" x="732" y="205.8" fill="#2dd4bf" font-family="'JetBrains Mono', monospace" font-size="4.4" textLength="384" lengthAdjust="spacing">ssssss##ss###sssssss##%#c+++++++*****s%%%%%%###%################</text></g>
-<rect y="202.0" width="5" height="5.0" fill="#5eead4" opacity="0"><animate attributeName="x" from="732" to="1116" begin="3.60s" dur="0.20s" fill="freeze"/><set attributeName="opacity" to="0.9" begin="3.60s"/><set attributeName="opacity" to="0" begin="3.80s"/></rect>
-<clipPath id="bt19"><rect x="732" y="207.0" height="5.0" width="0"><animate attributeName="width" from="0" to="384" begin="3.80s" dur="0.20s" fill="freeze"/></rect></clipPath>
-<g clip-path="url(#bt19)"><text xml:space="preserve" x="732" y="210.8" fill="#2dd4bf" font-family="'JetBrains Mono', monospace" font-size="4.4" textLength="384" lengthAdjust="spacing">########s####sssssss###%#c+++++++++*s%%##%######################</text></g>
-<rect y="207.0" width="5" height="5.0" fill="#5eead4" opacity="0"><animate attributeName="x" from="732" to="1116" begin="3.80s" dur="0.20s" fill="freeze"/><set attributeName="opacity" to="0.9" begin="3.80s"/><set attributeName="opacity" to="0" begin="4.00s"/></rect>
-<clipPath id="bt20"><rect x="732" y="212.0" height="5.0" width="0"><animate attributeName="width" from="0" to="384" begin="4.00s" dur="0.20s" fill="freeze"/></rect></clipPath>
-<g clip-path="url(#bt20)"><text xml:space="preserve" x="732" y="215.8" fill="#2dd4bf" font-family="'JetBrains Mono', monospace" font-size="4.4" textLength="384" lengthAdjust="spacing">########s###sssssssss#####c++++==++c%%###############%%#########</text></g>
-<rect y="212.0" width="5" height="5.0" fill="#5eead4" opacity="0"><animate attributeName="x" from="732" to="1116" begin="4.00s" dur="0.20s" fill="freeze"/><set attributeName="opacity" to="0.9" begin="4.00s"/><set attributeName="opacity" to="0" begin="4.20s"/></rect>
-<clipPath id="bt21"><rect x="732" y="217.0" height="5.0" width="0"><animate attributeName="width" from="0" to="384" begin="4.20s" dur="0.20s" fill="freeze"/></rect></clipPath>
-<g clip-path="url(#bt21)"><text xml:space="preserve" x="732" y="220.8" fill="#2dd4bf" font-family="'JetBrains Mono', monospace" font-size="4.4" textLength="384" lengthAdjust="spacing">###%##%#s####s##ssssss#####*+===++css########%######%%%%%%%#####</text></g>
-<rect y="217.0" width="5" height="5.0" fill="#5eead4" opacity="0"><animate attributeName="x" from="732" to="1116" begin="4.20s" dur="0.20s" fill="freeze"/><set attributeName="opacity" to="0.9" begin="4.20s"/><set attributeName="opacity" to="0" begin="4.40s"/></rect>
-<clipPath id="bt22"><rect x="732" y="222.0" height="5.0" width="0"><animate attributeName="width" from="0" to="384" begin="4.40s" dur="0.20s" fill="freeze"/></rect></clipPath>
-<g clip-path="url(#bt22)"><text xml:space="preserve" x="732" y="225.8" fill="#2dd4bf" font-family="'JetBrains Mono', monospace" font-size="4.4" textLength="384" lengthAdjust="spacing">###%%%%#ss##%%%####ssss###%c++++*cc*c########%######%%%%%%%###%#</text></g>
-<rect y="222.0" width="5" height="5.0" fill="#5eead4" opacity="0"><animate attributeName="x" from="732" to="1116" begin="4.40s" dur="0.20s" fill="freeze"/><set attributeName="opacity" to="0.9" begin="4.40s"/><set attributeName="opacity" to="0" begin="4.60s"/></rect>
-<clipPath id="bt23"><rect x="732" y="227.0" height="5.0" width="0"><animate attributeName="width" from="0" to="384" begin="4.60s" dur="0.20s" fill="freeze"/></rect></clipPath>
-<g clip-path="url(#bt23)"><text xml:space="preserve" x="732" y="230.8" fill="#2dd4bf" font-family="'JetBrains Mono', monospace" font-size="4.4" textLength="384" lengthAdjust="spacing">##%%%%%#ssss#######sss#####c+++**cc*c########%#####%%%%%%%####%#</text></g>
-<rect y="227.0" width="5" height="5.0" fill="#5eead4" opacity="0"><animate attributeName="x" from="732" to="1116" begin="4.60s" dur="0.20s" fill="freeze"/><set attributeName="opacity" to="0.9" begin="4.60s"/><set attributeName="opacity" to="0" begin="4.80s"/></rect>
+<!-- Circuit Traces -->
+<path d="M 710 165 L 760 165 L 790 135 L 860 135 L 890 170 L 970 170 L 1000 135 L 1080 135" 
+      fill="none" stroke="url(#circuitGrad)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+
+<path d="M 790 135 L 790 205 L 850 205 L 890 170" 
+      fill="none" stroke="#143447" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+<path d="M 970 170 L 970 205 L 1030 205 L 1060 175" 
+      fill="none" stroke="#143447" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+<!-- Node 1: Java (Primary) -->
+<circle cx="710" cy="165" r="7.5" fill="#f59e0b" filter="url(#nodeGlow)"/>
+<circle cx="710" cy="165" r="3" fill="#ffffff"/>
+<text class="s-mono" x="710" y="190" fill="#fbd38d" font-size="12" font-weight="700" text-anchor="middle">Java</text>
+<text class="s-mono" x="710" y="203" fill="#64748b" font-size="9.5" text-anchor="middle">JDBC/JPA</text>
+
+<!-- Node 2: C++ (CP/DSA) -->
+<circle cx="860" cy="135" r="7.5" fill="#06b6d4" filter="url(#nodeGlow)"/>
+<circle cx="860" cy="135" r="3" fill="#ffffff"/>
+<text class="s-mono" x="860" y="118" fill="#67e8f9" font-size="12" font-weight="700" text-anchor="middle">C++</text>
+<text class="s-mono" x="860" y="105" fill="#64748b" font-size="9.5" text-anchor="middle">DSA / CP</text>
+
+<!-- Node 3: Python -->
+<circle cx="850" cy="205" r="6" fill="#3b82f6" filter="url(#nodeGlow)"/>
+<text class="s-mono" x="850" y="225" fill="#93c5fd" font-size="11" font-weight="600" text-anchor="middle">Python</text>
+
+<!-- Node 4: SQL & Database -->
+<circle cx="970" cy="170" r="7" fill="#10b981" filter="url(#nodeGlow)"/>
+<circle cx="970" cy="170" r="2.5" fill="#ffffff"/>
+<text class="s-mono" x="970" y="152" fill="#6ee7b7" font-size="12" font-weight="700" text-anchor="middle">SQL</text>
+<text class="s-mono" x="970" y="140" fill="#64748b" font-size="9.5" text-anchor="middle">MySQL</text>
+
+<!-- Node 5: JavaScript / Web -->
+<circle cx="1030" cy="205" r="6" fill="#facc15" filter="url(#nodeGlow)"/>
+<text class="s-mono" x="1030" y="225" fill="#fde047" font-size="11" font-weight="600" text-anchor="middle">JS/Web</text>
+
+<!-- Node 6: Docker / Git -->
+<circle cx="1080" cy="135" r="7" fill="#38bdf8" filter="url(#nodeGlow)"/>
+<circle cx="1080" cy="135" r="2.5" fill="#ffffff"/>
+<text class="s-mono" x="1080" y="118" fill="#7dd3fc" font-size="12" font-weight="700" text-anchor="middle">Docker</text>
+<text class="s-mono" x="1080" y="105" fill="#64748b" font-size="9.5" text-anchor="middle">Git/Maven</text>
+
+<!-- Traveling Energy Signal across the circuit -->
+<circle r="5" fill="#ffffff" filter="url(#signalGlow)">
+  <animateMotion dur="5s" repeatCount="indefinite"
+    path="M 710 165 L 760 165 L 790 135 L 860 135 L 890 170 L 970 170 L 1000 135 L 1080 135"/>
+</circle>
 
 <!-- ================= LOWER METRICS ROW ================= -->
 <line x1="72" y1="250" x2="1128" y2="250" stroke="#162736" stroke-width="1.2"/>
@@ -202,33 +200,33 @@
 <!-- Metric 1: Problems Solved -->
 <g transform="translate(72, 266)">
   <rect width="230" height="60" rx="10" fill="#091824" stroke="#16384c" stroke-width="1"/>
-  <text x="16" y="25" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="1">TOTAL SOLVED</text>
-  <text x="16" y="49" fill="#2dd4bf" font-family="'Segoe UI', monospace" font-size="22" font-weight="800">800+ Unique</text>
-  <text x="155" y="47" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="10.5">Problems</text>
+  <text class="s-mono" x="16" y="24" fill="#64748b" font-size="10.5" font-weight="600" letter-spacing="1">TOTAL SOLVED</text>
+  <text class="s-serif" x="16" y="50" fill="#2dd4bf" font-size="24" font-weight="700">800+ Unique</text>
+  <text class="s-mono" x="165" y="48" fill="#64748b" font-size="10.5">Problems</text>
 </g>
 
 <!-- Metric 2: LeetCode Rating & Streak -->
 <g transform="translate(322, 266)">
   <rect width="250" height="60" rx="10" fill="#091824" stroke="#16384c" stroke-width="1"/>
-  <text x="16" y="25" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="1">LEETCODE CONTEST</text>
-  <text x="16" y="49" fill="#f59e0b" font-family="'Segoe UI', monospace" font-size="22" font-weight="800">1592 Peak</text>
-  <text x="145" y="47" fill="#2dd4bf" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">· 300d+ Streak</text>
+  <text class="s-mono" x="16" y="24" fill="#64748b" font-size="10.5" font-weight="600" letter-spacing="1">LEETCODE CONTEST</text>
+  <text class="s-serif" x="16" y="50" fill="#f59e0b" font-size="24" font-weight="700">1592 Peak</text>
+  <text class="s-mono" x="145" y="48" fill="#2dd4bf" font-size="11" font-weight="700">· 300d+ Streak</text>
 </g>
 
 <!-- Metric 3: ICPC & CodeChef -->
 <g transform="translate(592, 266)">
   <rect width="260" height="60" rx="10" fill="#091824" stroke="#16384c" stroke-width="1"/>
-  <text x="16" y="25" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="1">CONTEST HONORS</text>
-  <text x="16" y="49" fill="#38bdf8" font-family="'Segoe UI', monospace" font-size="20" font-weight="800">ICPC Prelim '26</text>
-  <text x="180" y="47" fill="#93c5fd" font-family="'JetBrains Mono', monospace" font-size="11">Rank 1168</text>
+  <text class="s-mono" x="16" y="24" fill="#64748b" font-size="10.5" font-weight="600" letter-spacing="1">CONTEST HONORS</text>
+  <text class="s-serif" x="16" y="50" fill="#38bdf8" font-size="22" font-weight="700">ICPC Prelim '26</text>
+  <text class="s-mono" x="180" y="48" fill="#93c5fd" font-size="11">Rank 1168</text>
 </g>
 
 <!-- Metric 4: Philosophy Quote (CodeDNA) -->
 <g transform="translate(872, 266)">
   <rect width="256" height="60" rx="10" fill="#091824" stroke="#16384c" stroke-width="1"/>
-  <text x="16" y="25" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="1">PROJECT CODEDNA</text>
-  <text x="16" y="44" fill="#cbd5e1" font-family="'Segoe UI', sans-serif" font-size="11.5" font-style="italic">"Get hired for what you build,</text>
-  <text x="16" y="56" fill="#2dd4bf" font-family="'Segoe UI', sans-serif" font-size="11.5" font-style="italic">not where you study."</text>
+  <text class="s-mono" x="16" y="24" fill="#64748b" font-size="10.5" font-weight="600" letter-spacing="1">PROJECT CODEDNA</text>
+  <text class="s-serif" x="16" y="44" fill="#cbd5e1" font-size="12" font-style="italic">"Get hired for what you build,</text>
+  <text class="s-serif" x="16" y="56" fill="#2dd4bf" font-size="12" font-style="italic">not where you study."</text>
 </g>
 
 <!-- ================= ANIMATED LASER SCANLINE ================= -->

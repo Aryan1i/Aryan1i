@@ -1,0 +1,221 @@
+<svg width="1200" height="380" viewBox="0 0 1200 380" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <!-- Background Gradient -->
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#04070c"/>
+    <stop offset="45%" stop-color="#0a121c"/>
+    <stop offset="85%" stop-color="#0e1b27"/>
+    <stop offset="100%" stop-color="#07131d"/>
+  </linearGradient>
+
+  <!-- Cyan/Teal Circuit Glow -->
+  <filter id="nodeGlow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="4" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+
+  <!-- Bright Signal Pulse Glow -->
+  <filter id="signalGlow" x="-100%" y="-100%" width="300%" height="300%">
+    <feGaussianBlur stdDeviation="6" result="blur1"/>
+    <feGaussianBlur stdDeviation="3" result="blur2"/>
+    <feMerge>
+      <feMergeNode in="blur1"/>
+      <feMergeNode in="blur2"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+
+  <!-- Tech Grid Overlay -->
+  <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+    <path d="M 36 0 L 0 0 0 36" fill="none" stroke="#132433" stroke-width="0.9" opacity="0.45"/>
+    <circle cx="36" cy="36" r="0.8" fill="#1e3a52" opacity="0.6"/>
+  </pattern>
+
+  <!-- Scanning Laser Gradient -->
+  <linearGradient id="laserScan" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#2dd4bf" stop-opacity="0"/>
+    <stop offset="50%" stop-color="#2dd4bf" stop-opacity="0.85"/>
+    <stop offset="100%" stop-color="#2dd4bf" stop-opacity="0"/>
+  </linearGradient>
+
+  <!-- Circuit Line Gradient -->
+  <linearGradient id="circuitGrad" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#143447"/>
+    <stop offset="50%" stop-color="#2dd4bf" stop-opacity="0.6"/>
+    <stop offset="100%" stop-color="#143447"/>
+  </linearGradient>
+
+  <!-- Top Accent Bar Gradient -->
+  <linearGradient id="topBorderGrad" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#0f766e" stop-opacity="0.2"/>
+    <stop offset="30%" stop-color="#2dd4bf"/>
+    <stop offset="70%" stop-color="#38bdf8"/>
+    <stop offset="100%" stop-color="#0f766e" stop-opacity="0.2"/>
+  </linearGradient>
+
+  <clipPath id="innerScreen">
+    <rect x="36" y="24" width="1128" height="332" rx="18"/>
+  </clipPath>
+</defs>
+
+<!-- Outer Background Canvas -->
+<rect width="1200" height="380" fill="#020408"/>
+
+<!-- Main Terminal Window Frame -->
+<rect x="36" y="24" width="1128" height="332" rx="18" fill="url(#bg)" stroke="#1a2e3d" stroke-width="1.6"/>
+
+<!-- Subtle Tech Grid Background -->
+<rect x="36" y="24" width="1128" height="332" rx="18" fill="url(#grid)" clip-path="url(#innerScreen)"/>
+
+<!-- Top Accent Border Line -->
+<rect x="36" y="24" width="1128" height="2" fill="url(#topBorderGrad)"/>
+
+<!-- ================= TOP WINDOW CONTROLS ================= -->
+<circle cx="68" cy="54" r="6" fill="#ff5f56"/>
+<circle cx="90" cy="54" r="6" fill="#ffbd2e"/>
+<circle cx="112" cy="54" r="6" fill="#27c93f"/>
+
+<text x="144" y="58" fill="#5eead4" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="12" font-weight="600" letter-spacing="1.5">
+  ARYAN.DEV // PW INSTITUTE OF INNOVATION // B.TECH CSE
+</text>
+
+<g transform="translate(1000, 46)">
+  <!-- Pulsating Live Dot -->
+  <circle cx="0" cy="8" r="4.5" fill="#2dd4bf">
+    <animate attributeName="r" values="4;6.5;4" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <text x="15" y="12" fill="#2dd4bf" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="700" letter-spacing="1">
+    STREAK: 290D 🔥
+  </text>
+</g>
+
+<!-- Top Separator -->
+<line x1="36" y1="76" x2="1164" y2="76" stroke="#162736" stroke-width="1.2"/>
+
+<!-- ================= LEFT IDENTITY COLUMN ================= -->
+<!-- Welcome tag -->
+<rect x="72" y="102" width="138" height="22" rx="4" fill="#0d2b2c" stroke="#14b8a6" stroke-width="0.8"/>
+<text x="82" y="117" fill="#2dd4bf" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700" letter-spacing="1">
+  ⚡ SOFTWARE &amp; DSA
+</text>
+
+<!-- Main Name Heading -->
+<text x="70" y="168" fill="#ffffff" font-family="'Segoe UI', -apple-system, 'JetBrains Mono', monospace" font-size="44" font-weight="800" letter-spacing="-0.5">
+  ARYAN GUPTA
+</text>
+
+<!-- Subtitle / Passion -->
+<text x="72" y="198" fill="#5eead4" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="15" font-weight="500">
+  algorithms · systems engineering · backend development
+</text>
+
+<!-- Blinking Cursor -->
+<rect x="585" y="184" width="9" height="17" fill="#2dd4bf">
+  <animate attributeName="opacity" values="1;0;1" dur="0.9s" repeatCount="indefinite"/>
+</rect>
+
+<!-- Status text -->
+<text x="72" y="226" fill="#8ca0b3" font-family="'JetBrains Mono', monospace" font-size="12.5">
+  <tspan fill="#38bdf8">🎓 Education:</tspan> B.Tech CSE (2025–2029) · Semester 3
+  <tspan fill="#64748b"> | </tspan>
+  <tspan fill="#f59e0b">Rank 3rd in Batch (Sem 1)</tspan>
+</text>
+
+<!-- ================= RIGHT SIDE: TECH CIRCUIT DIAGRAM ================= -->
+<text x="690" y="105" fill="#5eead4" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" letter-spacing="2">
+  // CORE TECH ARSENAL
+</text>
+
+<!-- Circuit Traces -->
+<path d="M 700 165 L 750 165 L 780 135 L 850 135 L 880 170 L 960 170 L 990 135 L 1070 135" 
+      fill="none" stroke="url(#circuitGrad)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+
+<path d="M 780 135 L 780 205 L 840 205 L 880 170" 
+      fill="none" stroke="#143447" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+<path d="M 960 170 L 960 205 L 1020 205 L 1050 175" 
+      fill="none" stroke="#143447" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+<!-- Node 1: Java (Primary) -->
+<circle cx="700" cy="165" r="7" fill="#f59e0b" filter="url(#nodeGlow)"/>
+<circle cx="700" cy="165" r="3" fill="#ffffff"/>
+<text x="700" y="190" fill="#fbd38d" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" text-anchor="middle">Java</text>
+<text x="700" y="203" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="9.5" text-anchor="middle">JDBC/JPA</text>
+
+<!-- Node 2: C++ (CP/DSA) -->
+<circle cx="850" cy="135" r="7" fill="#06b6d4" filter="url(#nodeGlow)"/>
+<circle cx="850" cy="135" r="3" fill="#ffffff"/>
+<text x="850" y="118" fill="#67e8f9" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" text-anchor="middle">C++</text>
+<text x="850" y="105" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="9.5" text-anchor="middle">DSA / CP</text>
+
+<!-- Node 3: Python -->
+<circle cx="840" cy="205" r="5.5" fill="#3b82f6" filter="url(#nodeGlow)"/>
+<text x="840" y="225" fill="#93c5fd" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" text-anchor="middle">Python</text>
+
+<!-- Node 4: SQL & Database -->
+<circle cx="960" cy="170" r="6.5" fill="#10b981" filter="url(#nodeGlow)"/>
+<circle cx="960" cy="170" r="2.5" fill="#ffffff"/>
+<text x="960" y="152" fill="#6ee7b7" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" text-anchor="middle">SQL</text>
+<text x="960" y="140" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="9.5" text-anchor="middle">MySQL</text>
+
+<!-- Node 5: JavaScript / Web -->
+<circle cx="1020" cy="205" r="5.5" fill="#facc15" filter="url(#nodeGlow)"/>
+<text x="1020" y="225" fill="#fde047" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" text-anchor="middle">JS/Web</text>
+
+<!-- Node 6: Docker / Git -->
+<circle cx="1070" cy="135" r="6.5" fill="#38bdf8" filter="url(#nodeGlow)"/>
+<circle cx="1070" cy="135" r="2.5" fill="#ffffff"/>
+<text x="1070" y="118" fill="#7dd3fc" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" text-anchor="middle">Docker</text>
+<text x="1070" y="105" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="9.5" text-anchor="middle">Git/Maven</text>
+
+<!-- Traveling Energy Signal across the circuit -->
+<circle r="4.5" fill="#ffffff" filter="url(#signalGlow)">
+  <animateMotion dur="5.5s" repeatCount="indefinite"
+    path="M 700 165 L 750 165 L 780 135 L 850 135 L 880 170 L 960 170 L 990 135 L 1070 135"/>
+</circle>
+
+<!-- ================= LOWER METRICS & ACHIEVEMENTS ROW ================= -->
+<line x1="72" y1="250" x2="1128" y2="250" stroke="#162736" stroke-width="1.2"/>
+
+<!-- Metric 1: Problems Solved -->
+<g transform="translate(72, 266)">
+  <rect width="230" height="60" rx="10" fill="#091824" stroke="#16384c" stroke-width="1"/>
+  <text x="16" y="25" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="1">TOTAL SOLVED</text>
+  <text x="16" y="49" fill="#2dd4bf" font-family="'Segoe UI', monospace" font-size="22" font-weight="800">800+ Unique</text>
+  <text x="155" y="47" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="10.5">Problems</text>
+</g>
+
+<!-- Metric 2: LeetCode Rating & Streak -->
+<g transform="translate(322, 266)">
+  <rect width="250" height="60" rx="10" fill="#091824" stroke="#16384c" stroke-width="1"/>
+  <text x="16" y="25" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="1">LEETCODE CONTEST</text>
+  <text x="16" y="49" fill="#f59e0b" font-family="'Segoe UI', monospace" font-size="22" font-weight="800">1592 Peak</text>
+  <text x="145" y="47" fill="#2dd4bf" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">· 290d Streak</text>
+</g>
+
+<!-- Metric 3: ICPC & CodeChef -->
+<g transform="translate(592, 266)">
+  <rect width="260" height="60" rx="10" fill="#091824" stroke="#16384c" stroke-width="1"/>
+  <text x="16" y="25" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="1">CONTEST HONORS</text>
+  <text x="16" y="49" fill="#38bdf8" font-family="'Segoe UI', monospace" font-size="20" font-weight="800">ICPC Prelim '26</text>
+  <text x="180" y="47" fill="#93c5fd" font-family="'JetBrains Mono', monospace" font-size="11">Rank 1168</text>
+</g>
+
+<!-- Metric 4: Philosophy Quote (CodeDNA) -->
+<g transform="translate(872, 266)">
+  <rect width="256" height="60" rx="10" fill="#091824" stroke="#16384c" stroke-width="1"/>
+  <text x="16" y="25" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" letter-spacing="1">PROJECT CODEDNA</text>
+  <text x="16" y="44" fill="#cbd5e1" font-family="'Segoe UI', sans-serif" font-size="11.5" font-style="italic">"Get hired for what you build,</text>
+  <text x="16" y="56" fill="#2dd4bf" font-family="'Segoe UI', sans-serif" font-size="11.5" font-style="italic">not where you study."</text>
+</g>
+
+<!-- ================= ANIMATED LASER SCANLINE ================= -->
+<rect x="36" y="24" width="4" height="332" fill="url(#laserScan)" opacity="0.4" clip-path="url(#innerScreen)">
+  <animate attributeName="x" values="36;1160;36" dur="7s" repeatCount="indefinite"/>
+</rect>
+
+</svg>

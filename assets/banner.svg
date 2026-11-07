@@ -215,12 +215,11 @@
   <text class="s-mono" x="88" y="48" fill="#2dd4bf" font-size="11" font-weight="700">· 300D+ Streak 🔥</text>
 </g>
 
-<!-- Metric 3: ICPC & CodeChef (FIXED: '26 and Rank 1168 completely separated) -->
+<!-- Metric 3: ICPC Regionalist -->
 <g transform="translate(592, 266)">
   <rect width="260" height="60" rx="10" fill="#091824" stroke="#16384c" stroke-width="1"/>
   <text class="s-mono" x="16" y="24" fill="#64748b" font-size="10.5" font-weight="600" letter-spacing="1">CONTEST HONORS</text>
-  <text class="s-serif" x="16" y="50" fill="#38bdf8" font-size="22" font-weight="700">ICPC '26</text>
-  <text class="s-mono" x="120" y="48" fill="#5eead4" font-size="12" font-weight="700">· Rank 1168</text>
+  <text class="s-serif" x="16" y="50" fill="#38bdf8" font-size="18.5" font-weight="700">ICPC Regionalist '26</text>
 </g>
 
 <!-- Metric 4: Philosophy Quote (CodeDNA) -->

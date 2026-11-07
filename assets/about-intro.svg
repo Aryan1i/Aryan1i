@@ -106,7 +106,7 @@
     <g clip-path="url(#ab-c5)">
       <text x="64" y="250" fill="#14b8a6">→</text>
       <text x="82" y="250" fill="#2dd4bf" font-weight="600">800+ Solved</text>
-      <text x="175" y="250" fill="#8ca0b3">· 300D+ LeetCode Streak · ICPC '26 Prelim Rank 1168</text>
+      <text x="175" y="250" fill="#8ca0b3">· 300D+ LeetCode Streak · ICPC Regionalist '26</text>
     </g>
 
     <!-- Command 4: ls ./arsenal -->
@@ -160,7 +160,7 @@
       <rect x="0" y="0" width="3.5" height="102" rx="2" fill="#38bdf8"/>
       <text class="ab-mono" x="20" y="26" font-size="10.5" font-weight="700" letter-spacing="2" fill="#38bdf8">ALGORITHMIC RIGOR</text>
       <text class="ab-serif" x="20" y="60" font-size="28" font-weight="300" fill="#f0f6fc">C++ &amp; DSA</text>
-      <text class="ab-sans" x="20" y="84" font-size="12" fill="#8ca0b3">800+ solved · 300D+ streak · ICPC Prelim '26</text>
+      <text class="ab-sans" x="20" y="84" font-size="12" fill="#8ca0b3">800+ solved · 300D+ streak · ICPC Regionalist '26</text>
     </g>
   </g>
 

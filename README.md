@@ -93,7 +93,7 @@ achievements:
   - leetcode_daily_streak: 300+ days continuous practice 🔥
   - peak_leetcode_rating: 1592
   - codechef_rating: 1268
-  - icpc_india_preliminary_2026: Tentative Rank 1168
+  - icpc_regionalist: ICPC Asia West Regionalist '26 (Amritapuri Onsite Finals)
 
 current_focus:
   - Advanced Spring Boot & Relational Entity Architecture
@@ -120,7 +120,7 @@ philosophy:
 <br/><br/>
 
 <!-- Sushmita-Style Bespoke Recognition Grid with Moving Border Rays -->
-<img src="assets/recognition-card.svg" width="100%" alt="Achievements: ICPC 2026 Rank 1168, LeetCode 300+ Days Streak, 800+ Problems Solved, CodeChef 1268 Rating" />
+<img src="assets/recognition-card.svg" width="100%" alt="Achievements: ICPC Regionalist '26, LeetCode 300+ Days Streak, 800+ Problems Solved, CodeChef 1268 Rating" />
 
 <br/><br/>
 

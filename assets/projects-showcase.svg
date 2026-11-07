@@ -206,8 +206,8 @@
     <rect x="24" y="132" width="145" height="22" rx="4" fill="#2d1c0a" stroke="#d97706" stroke-width="0.8"/>
     <text class="ps-mono" x="32" y="147" fill="#fbbf24" font-size="10.5" font-weight="600">🏆 800+ Solved</text>
 
-    <rect x="179" y="132" width="135" height="22" rx="4" fill="#1b1c38" stroke="#4f46e5" stroke-width="0.8"/>
-    <text class="ps-mono" x="187" y="147" fill="#c7d2fe" font-size="10.5" font-weight="600">🎯 ICPC '26 Prelim</text>
+    <rect x="179" y="132" width="175" height="22" rx="4" fill="#1b1c38" stroke="#4f46e5" stroke-width="0.8"/>
+    <text class="ps-mono" x="187" y="147" fill="#c7d2fe" font-size="10.5" font-weight="600">🎯 ICPC Regionalist '26</text>
 
     <!-- Tech Chips Bottom Row -->
     <g transform="translate(24, 172)">

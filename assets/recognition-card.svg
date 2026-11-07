@@ -59,7 +59,7 @@
     <animate attributeName="stroke-dashoffset" values="3220;0" dur="6.8s" repeatCount="indefinite"/>
   </rect>
 
-  <!-- Hero Card 1: ICPC India Preliminary 2026 -->
+  <!-- Hero Card 1: ICPC Asia West Regionalist 2026 -->
   <g transform="translate(24 24)">
     <g clip-path="url(#ach-clip-a)">
       <rect width="700" height="240" fill="#07121b"/>
@@ -76,13 +76,17 @@
     </rect>
     
     <text class="ach-mono" x="36" y="52" font-size="12" letter-spacing="2.6" fill="#2dd4bf">INTERNATIONAL COLLEGIATE PROGRAMMING CONTEST</text>
-    <text class="ach-serif" x="34" y="114" font-size="46" font-weight="300" letter-spacing="-1" fill="#f0f6fc">Rank 1168</text>
-    <text class="ach-sans" x="36" y="146" font-size="15" fill="#8ca0b3">ICPC India Preliminary Online Contest 2026</text>
+    <text class="ach-serif" x="34" y="114" font-size="42" font-weight="300" letter-spacing="-0.5" fill="#f0f6fc">ICPC Regionalist '26</text>
+    <text class="ach-sans" x="36" y="146" font-size="15" fill="#8ca0b3">ICPC 2026 Asia West Amritapuri Multisite Regional Contest</text>
 
     <!-- Mini stats pill row -->
     <g transform="translate(36, 175)">
-      <rect width="180" height="32" rx="16" fill="#0d2b2c" stroke="#14b8a6" stroke-width="0.8"/>
-      <text class="ach-mono" x="90" y="20" font-size="11.5" font-weight="700" fill="#2dd4bf" text-anchor="middle">⚡ National Qualifier</text>
+      <rect width="160" height="32" rx="16" fill="#0d2b2c" stroke="#14b8a6" stroke-width="0.8"/>
+      <text class="ach-mono" x="80" y="20" font-size="11.5" font-weight="700" fill="#2dd4bf" text-anchor="middle">⚡ Onsite Finalist</text>
+      <g transform="translate(172, 0)">
+        <rect width="190" height="32" rx="16" fill="#0c2333" stroke="#0284c7" stroke-width="0.8"/>
+        <text class="ach-mono" x="95" y="20" font-size="11.5" font-weight="700" fill="#38bdf8" text-anchor="middle">Team Syntax Overflow</text>
+      </g>
     </g>
   </g>
 
